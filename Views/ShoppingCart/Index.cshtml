@@ -1,0 +1,153 @@
+@model OrderViewModel
+
+<link href="~/css/non-admin-style/shopping-cart-style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="btn-group mt-5 m-4 position-relative">
+    <i class="fa-solid fa-chevron-left sliding-icon"></i>
+    <button class="back-to-shop-btn" onclick="location.href='@Url.Action("Index", "Product")'">Tiếp tục mua sắm</button>
+</div>
+
+
+@{
+    if (Model.Items != null && Model.Items.Count != 0)
+    {
+        <div class="shopping-cart-container">
+
+            @{
+                if (ViewBag != null)
+                {
+                    <div class="text-danger">@ViewBag.ErrorMessage</div>
+                }
+            }
+
+            <section class="cart-left">
+                <h2>Giỏ hàng</h2>
+
+                <div id="cart-items">
+                    @{
+                        foreach (var i in Model.Items)
+                        {
+                            <div class="cart-item">
+                                <img src="@i.ImagePath" alt="@i.ProductName" class="cart-item-image">
+                                <div class="cart-item-details">
+                                    <h3 class="cart-item-name">@i.ProductName</h3>
+                                    <p class="cart-item-price">@i.ProductPrice.ToString("C0")</p>
+                                    <div class="cart-item-quantity">
+                                        <button class="quantity-btn decrease"
+                                            onclick="location.href='@Url.Action("Decrease", "ShoppingCart", new { productId = i.ProductID })'">-</button>
+                                        <input id="input-quantity" type="number" value="@i.Quantity" min="1" class="quantity-input"
+                                            readonly>
+                                        <button class="quantity-btn increase"
+                                            onclick="location.href='@Url.Action("Increase", "ShoppingCart", new { productId = i.ProductID })'">+</button>
+                                    </div>
+                                </div>
+                                <button class="remove-item"
+                                    onclick="location.href='@Url.Action("Remove", "ShoppingCart", new { productId = i.ProductID })'"><i
+                                        class="fas fa-trash"></i></button>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <div class="cart-summary">
+                    <p class="mb-2">Tổng thanh toán: <strong id="total-payment">0 ₫</strong></p>
+                </div>
+            </section>
+
+            <section class="cart-right">
+                <h2>Thông tin đặt hàng</h2>
+
+                <div id="information-form">
+                    <form id="order-form" asp-action="CreateInvoice" asp-controller="ShoppingCart">
+
+                        <div class="input-group">
+                            <label>Họ và tên *</label>
+                            <input asp-for="@Model.CustomerName" type="text" required />
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Số điện thoại *</label>
+                            <input asp-for="@Model.PhoneNumber" type="text" required />
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Email</label>
+                            <input asp-for="@Model.Email" type="email" />
+                        </div>
+
+
+                        <label>Địa chỉ *</label>
+                        <div class="row g-2">
+
+                            <div class="d-flex gap-3">
+                                <div class="input-group">
+                                    <label class="provide-label">Tỉnh / Thành phố *</label>
+                                    <select class="select-input" id="province-select">
+                                        <option value="">---</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label class="provide-label">Quận / Huyện* </label>
+                                    <select class="select-input" id="district-select">
+                                        <option value="">---</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <div class="input-group">
+                                    <label class="provide-label">Xã / Phường / Thị trấn *</label>
+                                    <select class="select-input" name="" id="ward-select">
+                                        <option value="">---</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group">
+                                    <label class="provide-label" for="">Nơi ở *</label>
+                                    <input id="input-address" type="text" required />
+                                </div>
+                            </div>
+                        </div>
+
+                        <input id="full-address" asp-for="@Model.Address" type="hidden">
+
+                        <label>Phương thức thanh toán *</label>
+                        <div class="payment-methods">
+                            <div class="payment-option" data-method="cod" title="Thanh toán khi nhận hàng">
+                                <i class="fas fa-truck"></i>
+                                <span class="payment-tooltip">COD</span>
+                            </div>
+                            <div class="payment-option" data-method="bank" title="Chuyển khoản ngân hàng">
+                                <i class="fas fa-university"></i>
+                                <span class="payment-tooltip">Chuyển khoản</span>
+                            </div>
+                            <div class="payment-option" data-method="momo" title="Ví điện tử Momo">
+                                <i class="fas fa-wallet"></i>
+                                <span class="payment-tooltip">Momo</span>
+                            </div>
+                        </div>
+
+                        <input type="hidden" id="payment-method" asp-for="@Model.PaymentMethod" required />
+
+                        <button type="submit" class="checkout-btn">Xác nhận và đặt hàng</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    }
+    else
+    {
+        <div class="empty-cart">
+            <script src="https://unpkg.com/@@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                type="module"></script>
+            <dotlottie-player src="https://lottie.host/eaedb738-87ca-46d5-b5ca-6b6491b23b12/JJAudMR6LY.lottie"
+                background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+            <p>Giỏ hàng của bạn đang trống, hãy mua sắm ngay!</p>
+        </div>
+    }
+}
+
+<script src="~/js/non-admin-script/shopping-cart-script.js"></script>

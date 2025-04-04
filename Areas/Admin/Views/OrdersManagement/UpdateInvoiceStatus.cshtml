@@ -1,0 +1,66 @@
+@model InvoiceUpdateVIewModel
+
+<link href="~/css/admin-style/update-invoice-style.css" rel="stylesheet">
+
+<nav class="navbar navbar-light">
+    <div class="container-fluid">
+        <span class="navbar-brand">Orders Management / <strong
+                style="font-size: 0.8rem; color: #656060;">@Model.Invoice.ID</strong></span>
+    </div>
+</nav>
+
+<div class="main-container">
+    <div class="modal-header">
+        <h3>Chi tiết đơn hàng</h3>
+    </div>
+
+    <div class="order-information">
+        <div class="order-info-container">
+            <div class="order-info">
+                <p><strong>Khách hàng:</strong> <span id="customerName">@Model.Invoice.CustomerName</span></p>
+                <p><strong>SĐT:</strong> <span id="customerPhone">@Model.Invoice.PhoneNumber</span></p>
+                <p><strong>Địa chỉ:</strong> <span id="customerAddress">@Model.Invoice.Address</span></p>
+                <p><strong>Tổng tiền:</strong> <span id="orderTotal">@Model.Invoice.Total.ToString("C0")</span></p>
+                <p>
+                <form class="status-form" asp-action="UpdateInvoiceStatus" asp-controller="OrdersManagement" method="post" >
+                    <strong>Trạng thái: </strong>
+                    <input type="hidden" asp-for="@Model.Invoice.ID" value="@Model.Invoice.ID" />
+                    <select id="orderStatus" asp-for="@Model.Invoice.Status">
+                        <option value="Chưa xử lý">Chưa xử lý</option>
+                        <option value="Đang xử lý">Đang xử lý</option>
+                        <option value="Đã xử lý">Đã xử lý</option>
+                        <option value="Hủy đơn">Hủy đơn</option>
+                    </select>
+                    <button type="submit">Lưu</button>
+                </form>
+                </p>
+            </div>
+        </div>
+
+        <div class="order-items-container">
+            <table class="order-items">
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                    </tr>
+                </thead>
+                <tbody id="orderItems">
+                    @{
+                        foreach (var p in Model.Items)
+                        {
+                            <tr>
+                                <td><img src="@p.ImagePath" alt="Sản phẩm"></td>
+                                <td>@p.ProductName</td>
+                                <td>@p.Quantity</td>
+                                <td>@p.ProductPrice.ToString("C0")</td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

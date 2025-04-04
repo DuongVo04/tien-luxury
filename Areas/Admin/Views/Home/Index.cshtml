@@ -1,0 +1,140 @@
+﻿@{
+    ViewData["Title"] = "Administrator page";
+    // Layout = "_Layout.cshtml";
+    // Layout = null;
+}
+
+
+<link href="~/css/admin-style/dash-board-style.css" rel="stylesheet" />
+
+<nav class="navbar navbar-light">
+    <div class="container-fluid">
+        <span class="navbar-brand">Dashboard</span>
+    </div>
+</nav>
+<div class="dashboard-container" id="dashboard">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="dashboard-card">
+                <h2 class="mb-4" style="color: var(--accent-color);">Welcome to Hair Salon Website Management</h2>
+                <p>Đây là trang quản trị nơi bạn có thể quản lý nội dung trang web và theo dõi số liệu hiệu suất trong tầm tay.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="stats-card">
+                <div class="stats-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="stats-info">
+                    <h3>1,240</h3>
+                    <p>Total Users</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="stats-card">
+                <div class="stats-icon">
+                    <i class="fa-solid fa-newspaper"></i>
+                </div>
+                <div class="stats-info">
+                    <h3>156</h3>
+                    <p>Published Articles</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="stats-card">
+                <div class="stats-icon">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+                <div class="stats-info">
+                    <h3>89</h3>
+                    <p>Products</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="stats-card">
+                <div class="stats-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="stats-info">
+                    <h3>32</h3>
+                    <p>New Orders</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8 mb-4">
+            <div class="dashboard-card">
+                <h5 class="card-title mb-3">Recent Activities</h5>
+                <div class="recent-activities">
+                    <div class="recent-item d-flex align-items-center">
+                        <div class="me-3">
+                            <i class="fa-solid fa-newspaper" style="color: var(--accent-color);"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1">New article published</h6>
+                            <small class="text-muted">2 hours ago</small>
+                        </div>
+                    </div>
+                    <div class="recent-item d-flex align-items-center">
+                        <div class="me-3">
+                            <i class="fa-solid fa-user" style="color: var(--secondary-color);"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1">New user registered</h6>
+                            <small class="text-muted">3 hours ago</small>
+                        </div>
+                    </div>
+                    <div class="recent-item d-flex align-items-center">
+                        <div class="me-3">
+                            <i class="fa-solid fa-cart-shopping" style="color: var(--hover-color);"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1">New order received</h6>
+                            <small class="text-muted">5 hours ago</small>
+                        </div>
+                    </div>
+                    <div class="recent-item d-flex align-items-center">
+                        <div class="me-3">
+                            <i class="fa-solid fa-comment" style="color: var(--primary-color);"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1">New comment added</h6>
+                            <small class="text-muted">Yesterday</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="dashboard-card">
+                <h5 class="card-title mb-3">Quick Access</h5>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                        <i class="fa-solid fa-plus me-3" style="color: var(--secondary-color);"></i>
+                        <span>New Article</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                        <i class="fa-solid fa-plus me-3" style="color: var(--primary-color);"></i>
+                        <span>New Product</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                        <i class="fa-solid fa-user-plus me-3" style="color: var(--hover-color);"></i>
+                        <span>Add User</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                        <i class="fa-solid fa-chart-simple me-3" style="color: var(--accent-color);"></i>
+                        <span>View Reports</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

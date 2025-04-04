@@ -1,0 +1,180 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|d:\\learning\\thissemester\\cmp376 - l\u1EADp tr\u00ECnh web\\hairsalon\\minhtienhairsalon\\areas\\admin\\views\\productsmanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|solutionrelative:areas\\admin\\views\\productsmanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|d:\\learning\\thissemester\\cmp376 - l\u1EADp tr\u00ECnh web\\hairsalon\\minhtienhairsalon\\areas\\admin\\views\\productsmanagement\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|solutionrelative:areas\\admin\\views\\productsmanagement\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|d:\\learning\\thissemester\\cmp376 - l\u1EADp tr\u00ECnh web\\hairsalon\\minhtienhairsalon\\wwwroot\\css\\admin-style\\add-update-product-style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|solutionrelative:wwwroot\\css\\admin-style\\add-update-product-style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|d:\\learning\\thissemester\\cmp376 - l\u1EADp tr\u00ECnh web\\hairsalon\\minhtienhairsalon\\wwwroot\\js\\admin-script\\check-validation-product.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|solutionrelative:wwwroot\\js\\admin-script\\check-validation-product.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|d:\\learning\\thissemester\\cmp376 - l\u1EADp tr\u00ECnh web\\hairsalon\\minhtienhairsalon\\areas\\admin\\viewmodels\\productaddeditviewmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|solutionrelative:areas\\admin\\viewmodels\\productaddeditviewmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|d:\\learning\\thissemester\\cmp376 - l\u1EADp tr\u00ECnh web\\hairsalon\\minhtienhairsalon\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|d:\\learning\\thissemester\\cmp376 - l\u1EADp tr\u00ECnh web\\hairsalon\\minhtienhairsalon\\areas\\admin\\controllers\\productsmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|solutionrelative:areas\\admin\\controllers\\productsmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|d:\\learning\\thissemester\\cmp376 - l\u1EADp tr\u00ECnh web\\hairsalon\\minhtienhairsalon\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|d:\\learning\\thissemester\\cmp376 - l\u1EADp tr\u00ECnh web\\hairsalon\\minhtienhairsalon\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E19053F0-185B-4CFA-8C3D-1E55A3534A7C}|MinhTienHairSalon.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 202,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T11:35:08.621Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T18:08:10.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductAddEditViewMode.cs",
+              "DocumentMoniker": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Areas\\Admin\\ViewModels\\ProductAddEditViewMode.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\ProductAddEditViewMode.cs",
+              "ToolTip": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Areas\\Admin\\ViewModels\\ProductAddEditViewMode.cs",
+              "RelativeToolTip": "Areas\\Admin\\ViewModels\\ProductAddEditViewMode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T17:18:04.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductService.cs",
+              "ToolTip": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Services\\ProductService.cs",
+              "RelativeToolTip": "Services\\ProductService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2019-10-12T00:57:03.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductsManagementController.cs",
+              "DocumentMoniker": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Areas\\Admin\\Controllers\\ProductsManagementController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ProductsManagementController.cs",
+              "ToolTip": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Areas\\Admin\\Controllers\\ProductsManagementController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ProductsManagementController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAMwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2020-07-22T01:54:06.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddProduct.cshtml",
+              "DocumentMoniker": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Areas\\Admin\\Views\\ProductsManagement\\AddProduct.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ProductsManagement\\AddProduct.cshtml",
+              "ToolTip": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Areas\\Admin\\Views\\ProductsManagement\\AddProduct.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ProductsManagement\\AddProduct.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAswDgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2022-11-21T04:45:15.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "add-update-product-style.css",
+              "DocumentMoniker": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\add-update-product-style.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\admin-style\\add-update-product-style.css",
+              "ToolTip": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\add-update-product-style.css",
+              "RelativeToolTip": "wwwroot\\css\\admin-style\\add-update-product-style.css",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2023-04-12T05:13:46.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "check-validation-product.js",
+              "DocumentMoniker": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\check-validation-product.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\admin-script\\check-validation-product.js",
+              "ToolTip": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\check-validation-product.js",
+              "RelativeToolTip": "wwwroot\\js\\admin-script\\check-validation-product.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-11T10:31:20.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Areas\\Admin\\Views\\ProductsManagement\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ProductsManagement\\Index.cshtml",
+              "ToolTip": "D:\\Learning\\ThisSemester\\CMP376 - L\u1EADp tr\u00ECnh Web\\HairSalon\\MinhTienHairSalon\\Areas\\Admin\\Views\\ProductsManagement\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ProductsManagement\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2022-02-10T03:48:12.147Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 113,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
