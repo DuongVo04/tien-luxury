@@ -1,0 +1,72 @@
+﻿body {
+    background: linear-gradient(135deg, #f5f5dc, #f7f7d1);
+    height: 100vh;
+    display: flex;
+    font-size: clamp(16px, 2vw, 20px);
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.login-container {
+    background: #f8e8afdd; /* Beige nhạt */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    font-size: 1rem;
+}
+
+input.form-control {
+    border: 1px solid #D2B48C; /* Viền mặc định mỏng hơn */
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background: white;
+    color: #3E3E3E;
+}
+
+
+    input.form-control:focus {
+        border: 2px solid #A89078 !important; /* Đảm bảo Bootstrap không ghi đè */
+        outline: none !important; /* Loại bỏ hiệu ứng mặc định của Bootstrap */
+        box-shadow: 0px 0px 5px rgba(168, 144, 120, 0.5) !important; /* Tạo hiệu ứng nhẹ */
+    }
+
+
+/* Nút Xác nhận */
+.btn-custom {
+    background: #BFA58A;
+    border: none;
+    color: white;
+}
+
+    .btn-custom:hover {
+        background: #A89078;
+    }
+
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    text-align: center;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 90%;
+    }
+}

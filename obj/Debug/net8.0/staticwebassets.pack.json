@@ -1,0 +1,601 @@
+{
+  "Files": [
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\Invoice-management-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\Invoice-management-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\add-update-product-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\add-update-product-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\admin-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\admin-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\confirm-delete-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\confirm-delete-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\dash-board-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\dash-board-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\edit-reservation-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\edit-reservation-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\employee-forrm-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\employee-forrm-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\form-with-image-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\form-with-image-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\login-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\login-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\product-management-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\product-management-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\service-reservation-management-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\service-reservation-management-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\admin-style\\update-invoice-style.css",
+      "PackagePath": "staticwebassets\\css\\admin-style\\update-invoice-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\non-admin-style\\contact-style.css",
+      "PackagePath": "staticwebassets\\css\\non-admin-style\\contact-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\non-admin-style\\home-style.css",
+      "PackagePath": "staticwebassets\\css\\non-admin-style\\home-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\non-admin-style\\main-styles.css",
+      "PackagePath": "staticwebassets\\css\\non-admin-style\\main-styles.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\non-admin-style\\mesage-successful.css",
+      "PackagePath": "staticwebassets\\css\\non-admin-style\\mesage-successful.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\non-admin-style\\order-successfull-style.css",
+      "PackagePath": "staticwebassets\\css\\non-admin-style\\order-successfull-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\non-admin-style\\product-detail-style.css",
+      "PackagePath": "staticwebassets\\css\\non-admin-style\\product-detail-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\non-admin-style\\product-style.css",
+      "PackagePath": "staticwebassets\\css\\non-admin-style\\product-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\non-admin-style\\reservation-style.css",
+      "PackagePath": "staticwebassets\\css\\non-admin-style\\reservation-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\non-admin-style\\reservation-successful-style.css",
+      "PackagePath": "staticwebassets\\css\\non-admin-style\\reservation-successful-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\non-admin-style\\service-style.css",
+      "PackagePath": "staticwebassets\\css\\non-admin-style\\service-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\css\\non-admin-style\\shopping-cart-style.css",
+      "PackagePath": "staticwebassets\\css\\non-admin-style\\shopping-cart-style.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\banner\\1.png",
+      "PackagePath": "staticwebassets\\image\\banner\\1.png"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\banner\\2.png",
+      "PackagePath": "staticwebassets\\image\\banner\\2.png"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\banner\\3.png",
+      "PackagePath": "staticwebassets\\image\\banner\\3.png"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\banner\\4.png",
+      "PackagePath": "staticwebassets\\image\\banner\\4.png"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\banner\\5.png",
+      "PackagePath": "staticwebassets\\image\\banner\\5.png"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\banner\\contact_banner.jpg",
+      "PackagePath": "staticwebassets\\image\\banner\\contact_banner.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\contact-icon\\facebook-icon.webp",
+      "PackagePath": "staticwebassets\\image\\contact-icon\\facebook-icon.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\contact-icon\\hotline-icon.png",
+      "PackagePath": "staticwebassets\\image\\contact-icon\\hotline-icon.png"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\contact-icon\\zalo-icon.webp",
+      "PackagePath": "staticwebassets\\image\\contact-icon\\zalo-icon.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\employee-image\\28e91aec-afdb-423e-96ab-eb83e7ef0134.jpg",
+      "PackagePath": "staticwebassets\\image\\employee-image\\28e91aec-afdb-423e-96ab-eb83e7ef0134.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\employee-image\\4c5c4347-3596-4cc2-bd65-03bef28399c0.jpg",
+      "PackagePath": "staticwebassets\\image\\employee-image\\4c5c4347-3596-4cc2-bd65-03bef28399c0.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\employee-image\\4fb55c1f-7bdb-49e9-a18a-f15aa6637a24.jpg",
+      "PackagePath": "staticwebassets\\image\\employee-image\\4fb55c1f-7bdb-49e9-a18a-f15aa6637a24.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\employee-image\\7ad31b0c-e70d-4ec3-9bf9-aa08e45b5c7a.jpg",
+      "PackagePath": "staticwebassets\\image\\employee-image\\7ad31b0c-e70d-4ec3-9bf9-aa08e45b5c7a.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\employee-image\\8183a102-3187-402f-9a8e-ca133de3fef1.jpg",
+      "PackagePath": "staticwebassets\\image\\employee-image\\8183a102-3187-402f-9a8e-ca133de3fef1.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\employee-image\\923e19be-7ab5-44c8-bdd6-e8e9ace4e4bf.jpg",
+      "PackagePath": "staticwebassets\\image\\employee-image\\923e19be-7ab5-44c8-bdd6-e8e9ace4e4bf.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\employee-image\\bd3c00c8-71a6-457b-b818-d9f659539f38.jpg",
+      "PackagePath": "staticwebassets\\image\\employee-image\\bd3c00c8-71a6-457b-b818-d9f659539f38.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\employee-image\\ce49fa93-f030-44e6-88c7-ba454e8ba1e6.jpg",
+      "PackagePath": "staticwebassets\\image\\employee-image\\ce49fa93-f030-44e6-88c7-ba454e8ba1e6.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\employee-image\\d5786bd4-9d08-4e8c-b979-d933b6bfebfa.jpg",
+      "PackagePath": "staticwebassets\\image\\employee-image\\d5786bd4-9d08-4e8c-b979-d933b6bfebfa.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\01cab33c-a8ec-4869-825f-bf918b7a98ce.webp",
+      "PackagePath": "staticwebassets\\image\\product-image\\01cab33c-a8ec-4869-825f-bf918b7a98ce.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\139d1856-a452-46f0-ad86-7b12f287273c.webp",
+      "PackagePath": "staticwebassets\\image\\product-image\\139d1856-a452-46f0-ad86-7b12f287273c.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\1f1ef7ab-70a9-45c1-81c0-cf88e55fbca4.webp",
+      "PackagePath": "staticwebassets\\image\\product-image\\1f1ef7ab-70a9-45c1-81c0-cf88e55fbca4.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\5048a45b-c524-4e91-80e5-fa55d4dc15ac.webp",
+      "PackagePath": "staticwebassets\\image\\product-image\\5048a45b-c524-4e91-80e5-fa55d4dc15ac.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\5a3af8b4-871f-4422-928d-50ea7a3d9e08.webp",
+      "PackagePath": "staticwebassets\\image\\product-image\\5a3af8b4-871f-4422-928d-50ea7a3d9e08.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\7287632c-b9b8-4a6d-91bf-10b7439526e5.jpg",
+      "PackagePath": "staticwebassets\\image\\product-image\\7287632c-b9b8-4a6d-91bf-10b7439526e5.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\77b303b1-117e-4dc2-8e8c-373734a32a5d.jpg",
+      "PackagePath": "staticwebassets\\image\\product-image\\77b303b1-117e-4dc2-8e8c-373734a32a5d.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\77b3e29e-ae34-4d20-9e06-5497fd440600.webp",
+      "PackagePath": "staticwebassets\\image\\product-image\\77b3e29e-ae34-4d20-9e06-5497fd440600.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\926c4deb-992d-43a8-94a0-6140dd64cc62.webp",
+      "PackagePath": "staticwebassets\\image\\product-image\\926c4deb-992d-43a8-94a0-6140dd64cc62.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\b1c2031b-4ef1-4323-9a0d-af33ca969139.png",
+      "PackagePath": "staticwebassets\\image\\product-image\\b1c2031b-4ef1-4323-9a0d-af33ca969139.png"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\bae5aa0d-b288-4b62-a409-4ce15c268764.webp",
+      "PackagePath": "staticwebassets\\image\\product-image\\bae5aa0d-b288-4b62-a409-4ce15c268764.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\product-image\\d309168e-9aec-403f-b3ba-05a9a2fdcc8d.webp",
+      "PackagePath": "staticwebassets\\image\\product-image\\d309168e-9aec-403f-b3ba-05a9a2fdcc8d.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-image\\036421f2-6663-453f-bace-027fddf20971.jpeg",
+      "PackagePath": "staticwebassets\\image\\service-image\\036421f2-6663-453f-bace-027fddf20971.jpeg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-image\\066990c0-55c3-4ee3-b535-2b4941c798b4.jpg",
+      "PackagePath": "staticwebassets\\image\\service-image\\066990c0-55c3-4ee3-b535-2b4941c798b4.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-image\\0aefb103-dcdf-4272-9331-34315f151342.jpg",
+      "PackagePath": "staticwebassets\\image\\service-image\\0aefb103-dcdf-4272-9331-34315f151342.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-image\\11c1398e-3408-4213-996d-547a6cf8b07b.jpg",
+      "PackagePath": "staticwebassets\\image\\service-image\\11c1398e-3408-4213-996d-547a6cf8b07b.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-image\\27cbf21a-6af4-44c9-b7db-86fd6135003a.webp",
+      "PackagePath": "staticwebassets\\image\\service-image\\27cbf21a-6af4-44c9-b7db-86fd6135003a.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-image\\2fc26d88-60eb-4336-b49b-0926545cb259.webp",
+      "PackagePath": "staticwebassets\\image\\service-image\\2fc26d88-60eb-4336-b49b-0926545cb259.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-image\\384ba2c5-5607-4379-ac5c-df03ba09e249.jpg",
+      "PackagePath": "staticwebassets\\image\\service-image\\384ba2c5-5607-4379-ac5c-df03ba09e249.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-image\\722006b3-6266-4662-8507-0277b9a0b32e.jpg",
+      "PackagePath": "staticwebassets\\image\\service-image\\722006b3-6266-4662-8507-0277b9a0b32e.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-image\\a49cfe4b-406c-4733-bc09-a3bba449ab3b.jpg",
+      "PackagePath": "staticwebassets\\image\\service-image\\a49cfe4b-406c-4733-bc09-a3bba449ab3b.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-image\\f3354b6c-1611-40fc-9ad5-131a089b48a3.jpg",
+      "PackagePath": "staticwebassets\\image\\service-image\\f3354b6c-1611-40fc-9ad5-131a089b48a3.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-image\\sanphamtoc.jpg",
+      "PackagePath": "staticwebassets\\image\\service-image\\sanphamtoc.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-type\\dich-vu-khac.jpg",
+      "PackagePath": "staticwebassets\\image\\service-type\\dich-vu-khac.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-type\\dich-vu-toc.jpg",
+      "PackagePath": "staticwebassets\\image\\service-type\\dich-vu-toc.jpg"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\image\\service-type\\skin-care.webp",
+      "PackagePath": "staticwebassets\\image\\service-type\\skin-care.webp"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\admin-index-script.js",
+      "PackagePath": "staticwebassets\\js\\admin-script\\admin-index-script.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\check-validation-employee.js",
+      "PackagePath": "staticwebassets\\js\\admin-script\\check-validation-employee.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\check-validation-password.js",
+      "PackagePath": "staticwebassets\\js\\admin-script\\check-validation-password.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\check-validation-product.js",
+      "PackagePath": "staticwebassets\\js\\admin-script\\check-validation-product.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\check-validation-service.js",
+      "PackagePath": "staticwebassets\\js\\admin-script\\check-validation-service.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\confirm-delete-script.js",
+      "PackagePath": "staticwebassets\\js\\admin-script\\confirm-delete-script.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\employee-management-script.js",
+      "PackagePath": "staticwebassets\\js\\admin-script\\employee-management-script.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\product-management-script.js",
+      "PackagePath": "staticwebassets\\js\\admin-script\\product-management-script.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\reservation-management-script.js",
+      "PackagePath": "staticwebassets\\js\\admin-script\\reservation-management-script.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\service-management-script.js",
+      "PackagePath": "staticwebassets\\js\\admin-script\\service-management-script.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\admin-script\\show-change-password-script.js",
+      "PackagePath": "staticwebassets\\js\\admin-script\\show-change-password-script.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\non-admin-script\\check-validation-numberphone.js",
+      "PackagePath": "staticwebassets\\js\\non-admin-script\\check-validation-numberphone.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\non-admin-script\\create-reservation-script.js",
+      "PackagePath": "staticwebassets\\js\\non-admin-script\\create-reservation-script.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\non-admin-script\\home-index-script.js",
+      "PackagePath": "staticwebassets\\js\\non-admin-script\\home-index-script.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\non-admin-script\\product-script.js",
+      "PackagePath": "staticwebassets\\js\\non-admin-script\\product-script.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\non-admin-script\\shopping-cart-script.js",
+      "PackagePath": "staticwebassets\\js\\non-admin-script\\shopping-cart-script.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\js\\non-admin-script\\theme-toggle.js",
+      "PackagePath": "staticwebassets\\js\\non-admin-script\\theme-toggle.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
+    },
+    {
+      "Id": "d:\\Learning\\ThisSemester\\CMP376 - Lập trình Web\\HairSalon\\MinhTienHairSalon\\wwwroot\\video\\Khonggian.mp4",
+      "PackagePath": "staticwebassets\\video\\Khonggian.mp4"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MinhTienHairSalon.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MinhTienHairSalon.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MinhTienHairSalon.props",
+      "PackagePath": "build\\MinhTienHairSalon.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MinhTienHairSalon.props",
+      "PackagePath": "buildMultiTargeting\\MinhTienHairSalon.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MinhTienHairSalon.props",
+      "PackagePath": "buildTransitive\\MinhTienHairSalon.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

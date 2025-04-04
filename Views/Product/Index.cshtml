@@ -1,0 +1,100 @@
+@model ProductByTypeListViewModel
+
+<link href="~/css/non-admin-style/product-style.css" rel="stylesheet">
+
+<div class="container">
+    <h1 class="page-title">SẢN PHẨM CHÍNH HÃNG</h1>
+
+    <div class="filter-section">
+        <div class="filter-group">
+            <a class="filter-btn" href="#hair-products">Mỹ phẩm tóc</a>
+            <a class="filter-btn" href="#skin-care">Skin care</a>
+            <a class="filter-btn" href="#other-products">Khác</a>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+            <div class="search-box position-relative">
+                <input type="text" id="search-input" name="searchTerm" value="@Model.SearchTerm"
+                    placeholder="Tìm kiếm sản phẩm..." autocomplete="off">
+                <div id="suggestions-box" class="suggestions-box"></div>
+
+            </div>
+
+            <div class="shopping-bag-container">
+                <a class="shopping-bag" href="@Url.Action("Index", "ShoppingCart")"><span
+                        class="material-symbols-outlined">shopping_bag</span></a>
+                @if (true)
+                {
+                    <span class="cart-count">@Model.QuantityInCart</span>
+                }
+            </div>
+        </div>
+
+    </div>
+    <section class="category" id="hair-products">
+        <h2 class="category-title">MỸ PHẨM TÓC</h2>
+        <div class="products-grid">
+            @{
+                foreach (var s in Model.Hair)
+                {
+                    <a href="@Url.Action("ProductDetail", "Product", new { id = s.ID })" class="product-card">
+                        <div class="product-image-container">
+                            <img src="@s.ImagePath" alt="@s.ProductName" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">@s.ProductName</h3>
+                            <p class="product-price pb-2">@s.Price.ToString("C0")</p>
+                        </div>
+                        <div class="quick-view">Xem nhanh</div>
+                    </a>
+                }
+            }
+        </div>
+    </section>
+
+    <section class="category" id="skin-care">
+        <h2 class="category-title">SKIN CARE</h2>
+        <div class="products-grid">
+            @{
+                foreach (var s in Model.SkinCare)
+                {
+                    <a href="@Url.Action("ProductDetail", "Product", new { id = s.ID })" class="product-card"
+                        data-product-id="@s.ID">
+                        <div class="product-image-container">
+                            <img src="@s.ImagePath" alt="@s.ProductName" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">@s.ProductName</h3>
+                            <p class="product-price pb-2">@s.Price.ToString("C0")</p>
+                        </div>
+                        <div class="quick-view">Xem nhanh</div>
+                    </a>
+                }
+            }
+        </div>
+    </section>
+
+    <section class="category" id="other-products">
+        <h2 class="category-title">SẢN PHẨM KHÁC</h2>
+        <div class="products-grid">
+            @{
+                foreach (var s in Model.Others)
+                {
+                    <a href="@Url.Action("ProductDetail", "Product", new { id = s.ID })" class="product-card"
+                        data-product-id="@s.ID">
+                        <div class="product-image-container">
+                            <img src="@s.ImagePath" alt="@s.ProductName" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">@s.ProductName</h3>
+                            <p class="product-price pb-2">@s.Price.ToString("C0")</p>
+                        </div>
+                        <div class="quick-view">Xem nhanh</div>
+                    </a>
+                }
+            }
+        </div>
+    </section>
+</div>
+
+
+<script src="~/js/non-admin-script/product-script.js"></script>
