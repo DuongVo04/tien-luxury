@@ -3,16 +3,13 @@ using MinhTienHairSalon.Services;
 using MinhTienHairSalon.Areas.Admin.ViewModels;
 using MinhTienHairSalon.Models;
 using MongoDB.Bson;
-using MinhTienHairSalon.ViewModels;
-using Microsoft.JSInterop;
-using System.Runtime.CompilerServices;
-using Microsoft.AspNetCore.Authentication;
-using System.Threading.Tasks;
+using MinhTienHairSalon.Areas.Filter;
 
 namespace MinhTienHairSalon.Areas.Admin.Controllers
 {
     [AdminAuth]
     [Area("Admin")]
+    [DesktopOnly]
     [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
     public class ReservationsManagementController(IReservationService reservationService, IServiceService serviceService, IReservationDetailService reservationDetailService) : Controller
     {   

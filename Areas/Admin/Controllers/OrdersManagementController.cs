@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MinhTienHairSalon.Areas.Admin.ViewModels;
+using MinhTienHairSalon.Areas.Filter;
 using MinhTienHairSalon.Models;
 using MinhTienHairSalon.Services;
 using MinhTienHairSalon.ViewModels;
@@ -9,6 +10,7 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
 {
     [AdminAuth]
     [Area("Admin")]
+    [DesktopOnly]
     [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
     public class OrdersManagementController(IInvoiceService invoiceService, IInvoiceDetailsService invoiceDetailsService, IProductService productService) : Controller
     {

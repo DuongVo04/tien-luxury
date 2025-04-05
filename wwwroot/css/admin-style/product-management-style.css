@@ -188,14 +188,14 @@
     }
 
 /* Responsive Design với Media Queries */
-@media (max-width: 768px) { /* Tablet và nhỏ hơn */
+@media (max-width: 768px) {
     .products-container {
-        padding: 15px; /* Giảm padding */
+        padding: 15px;
     }
 
     .products-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Giảm kích thước cột */
-        gap: 10px; /* Giảm khoảng cách */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+        gap: 10px; 
     }
 
     .product-image {
@@ -224,28 +224,28 @@
     }
 }
 
-@media (max-width: 480px) { /* Mobile */
+@media (max-width: 480px) {
     .products-container {
-        padding: 10px; /* Giảm padding thêm */
+        padding: 10px;
     }
 
     .product-header {
-        flex-direction: column; /* Chuyển sang dọc */
+        flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
 
     .products-grid {
-        grid-template-columns: 1fr; /* Một cột duy nhất */
+        grid-template-columns: 1fr;
         gap: 8px;
     }
 
     .product-card {
-        padding: 10px; /* Giảm padding */
+        padding: 10px;
     }
 
     .product-image {
-        height: 100px; /* Điều chỉnh chiều cao ảnh */
+        height: 100px;
     }
 
     .product-name {
@@ -260,18 +260,18 @@
     }
 
     .add-btn {
-        width: 100%; /* Nút full width */
+        width: 100%;
         padding: 8px;
     }
 
     .product-actions {
-        flex-direction: column; /* Nút hành động xếp dọc */
+        flex-direction: column;
         gap: 5px;
     }
 
     .edit-btn,
     .delete-btn {
-        width: 100%; /* Nút full width */
+        width: 100%;
         padding: 6px;
     }
 }

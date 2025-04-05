@@ -2,7 +2,7 @@
     margin: 2rem;
 }
 
-/* Invoice Detail Modal Styles */
+/* Modal Header */
 .modal-header {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -17,20 +17,18 @@
     font-weight: 600;
 }
 
+/* Order Information */
 .order-information {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     align-items: flex-start;
-    /* Thêm dòng này để các container không kéo dài theo nhau */
 }
 
 .order-info-container {
     flex: 2;
     min-width: 300px;
     max-width: 600px;
-    height: auto;
-    /* Hoặc có thể set cứng height nếu muốn */
 }
 
 .order-info {
@@ -51,10 +49,10 @@
 
 .order-info strong {
     min-width: 100px;
-    display: inline-block;
     color: var(--accent-color);
 }
 
+/* Order Status */
 #orderStatus {
     padding: 8px 12px;
     border-radius: 5px;
@@ -76,17 +74,55 @@
     box-shadow: 0 0 0 2px rgba(161, 136, 89, 0.3);
 }
 
+/* Order Items */
 .order-items-container {
     flex: 1;
     min-width: 400px;
     max-height: 500px;
-    /* Giới hạn chiều cao tối đa */
     overflow: auto;
-    /* Cho phép scroll cả chiều ngang và dọc */
-    position: relative;
-    /* Cần thiết cho sticky header */
     background-color: var(--card-color);
     border-radius: 10px;
+    position: relative;
+}
+
+#orderTable {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#orderTable th,
+#orderTable td {
+    padding: 12px 15px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.col-image {
+    padding: 0.5rem;
+    width: 15%;
+}
+
+.col-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.col-product-name {
+    width: 55%;
+    padding-right: 1rem;
+}
+
+.col-quantity {
+    width: 10%;
+    padding-right: 0.5rem;
+}
+
+.col-price {
+    width: 15%;
+    padding-right: 0.5rem;
+
 }
 
 .order-items thead {
@@ -96,18 +132,16 @@
 }
 
 .order-items th {
+    padding: 0.5rem;
     background-color: var(--primary-color);
     color: var(--text-color);
-    padding: 12px 15px;
-    text-align: left;
     font-weight: 600;
 }
 
 .order-items tbody {
     display: block;
-    overflow-y: auto;
     max-height: calc(500px - 60px);
-    /* Trừ đi chiều cao của header */
+    overflow-y: auto;
 }
 
 .order-items tr {
@@ -117,12 +151,6 @@
 }
 
 .order-items td {
-    padding: 12px 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.order-items td {
-    padding: 12px 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -138,6 +166,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/* Status Form */
 .status-form {
     display: flex;
     align-items: center;
@@ -159,7 +188,17 @@
     background-color: var(--accent-color-dark);
 }
 
-/* Responsive adjustments */
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .order-items-container {
+        min-width: 350px;
+    }
+
+    .col-product-name {
+        width: 400px;
+    }
+}
+
 @media (max-width: 768px) {
     .order-information {
         flex-direction: column;
@@ -169,6 +208,10 @@
     .order-items-container {
         min-width: 100%;
         max-width: 100%;
+    }
+
+    .col-product-name {
+        width: 300px;
     }
 
     .order-info p {
@@ -181,8 +224,7 @@
     }
 
     #orderStatus {
-        margin-left: 0;
-        margin-top: 5px;
+        margin: 5px 0 0;
     }
 
     .status-form {
@@ -191,7 +233,34 @@
     }
 
     .status-form button {
-        margin-left: 0;
-        margin-top: 10px;
+        margin: 10px 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-info-container {
+        min-width: 100%;
+    }
+
+    .order-items-container {
+        min-width: 100%;
+        max-height: 400px;
+    }
+
+    .order-items tbody {
+        max-height: calc(400px - 60px);
+    }
+
+    .col-image {
+        width: 80px;
+    }
+
+    .col-product-name {
+        width: 200px;
+    }
+
+    .order-items img {
+        width: 40px;
+        height: 40px;
     }
 }
