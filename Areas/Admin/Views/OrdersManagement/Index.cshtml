@@ -49,7 +49,7 @@
                                 {   
                                     <tr class="order-row" onclick="window.location='@Url.Action("UpdateInvoiceStatus", "OrdersManagement", new { invoiceID = i.ID })'">
                                         <td>@i.ID</td>
-                                        <td>@i.CreatedDate.ToString("dd/MM/yyyy")</td>
+                                        <td>@i.CreatedDate.ToLocalTime().ToString("dd/MM/yyyy")</td>
                                         <td>@i.CustomerName</td>
                                         <td>@i.PhoneNumber</td>
                                         <td>@i.Address</td>

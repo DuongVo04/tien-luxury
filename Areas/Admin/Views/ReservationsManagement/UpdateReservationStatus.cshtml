@@ -28,12 +28,15 @@
     <div class="d-flex gap-5">
         <div class="form-group">
             <label>Ngày Đặt:</label>
-            <input class="form-input" asp-for="@Model.Reservation.CreatedDate" type="datetime-local" readonly>
+            <input class="form-input" type="datetime-local"
+                value="@Model.Reservation.CreatedDate.ToLocalTime().ToString("yyyy-MM-ddTHH:mm")" readonly />
         </div>
         <div class="form-group">
-            <label>Ngày ghé</label>
-            <input class="form-input" asp-for="@Model.Reservation.ReservationDate" type="datetime-local" readonly>
+            <label>Ngày ghé:</label>
+            <input class="form-input" type="datetime-local"
+                value="@Model.Reservation.ReservationDate.ToLocalTime().ToString("yyyy-MM-ddTHH:mm")" readonly />
         </div>
+
     </div>
 
     <div class="form-group">

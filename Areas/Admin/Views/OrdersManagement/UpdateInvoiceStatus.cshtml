@@ -5,8 +5,9 @@
 <nav class="navbar navbar-light">
     <div class="container-fluid">
         <span class="navbar-brand">
-            <a href="@Url.Action("Index", "OrdersManagement")" style="text-decoration: none; color: inherit; cursor: pointer;">
-                Orders Management / 
+            <a href="@Url.Action("Index", "OrdersManagement")"
+                style="text-decoration: none; color: inherit; cursor: pointer;">
+                Orders Management /
             </a>
             <strong style="font-size: 0.8rem; color: #656060;">@Model.Invoice.ID</strong>
         </span>
@@ -21,12 +22,16 @@
     <div class="order-information">
         <div class="order-info-container">
             <div class="order-info">
+                <p><strong>Ngày đặt:</strong> <span
+                        id="orderDate">@Model.Invoice.CreatedDate.ToLocalTime().ToString("dd/MM/yyyy - HH:mm")</span>
+                </p>
                 <p><strong>Khách hàng:</strong> <span id="customerName">@Model.Invoice.CustomerName</span></p>
                 <p><strong>SĐT:</strong> <span id="customerPhone">@Model.Invoice.PhoneNumber</span></p>
                 <p><strong>Địa chỉ:</strong> <span id="customerAddress">@Model.Invoice.Address</span></p>
                 <p><strong>Tổng tiền:</strong> <span id="orderTotal">@Model.Invoice.Total.ToString("C0")</span></p>
                 <p>
-                <form class="status-form" asp-action="UpdateInvoiceStatus" asp-controller="OrdersManagement" method="post" >
+                <form class="status-form" asp-action="UpdateInvoiceStatus" asp-controller="OrdersManagement"
+                    method="post">
                     <strong>Trạng thái: </strong>
                     <input type="hidden" asp-for="@Model.Invoice.ID" value="@Model.Invoice.ID" />
                     <select id="orderStatus" asp-for="@Model.Invoice.Status">
@@ -59,7 +64,7 @@
                                 <td class="col-image">
                                     <img src="@p.ImagePath" alt="Sản phẩm">
                                 </td>
-                                <td class="col-product-name" >@p.ProductName</td>
+                                <td class="col-product-name">@p.ProductName</td>
                                 <td class="col-quantty">@p.Quantity</td>
                                 <td class="col-price">@p.ProductPrice.ToString("C0")</td>
                             </tr>
