@@ -3,13 +3,16 @@
 <link href="~/css/admin-style/add-update-product-style.css" rel="stylesheet" />
 
 <nav class="navbar navbar-light">
-    <div class="container-fluid">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
         <span class="navbar-brand">
-            <a href="@Url.Action("Index","ProductsManagement")" style="text-decoration: none; color: inherit; cursor: pointer;">Product Management</a>
+            <a href="@Url.Action("Index","ProductsManagement")" style="text-decoration: none; color: inherit; cursor: pointer;">Products Management</a>
             <span class="smaler-header">/ Update Product /
                 <span class="smaler-header-2">@Model.Product.ProductName</span>
             </span>
         </span>
+        <div class="datetime-container">
+            <span class="datetime-label">Hiện tại: <span id="datetime"></span></span>
+        </div>
     </div>
 </nav>
 
@@ -104,7 +107,7 @@
 
         <div class="form-group description-group">
             <label for="productDescription">Mô Tả</label>
-            <textarea asp-for="Product.Description" class="form-input description-area" id="description"
+            <textarea asp-for="Product.Description" class="form-input description-area" id="summernote"
                 rows="8"></textarea>
         </div>
     </form>

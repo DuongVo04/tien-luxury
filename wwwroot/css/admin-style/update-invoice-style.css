@@ -1,5 +1,5 @@
 .main-container {
-    margin: 2rem;
+    margin: 2.5rem;
 }
 
 /* Modal Header */
@@ -185,7 +185,7 @@
 }
 
 .status-form button:hover {
-    background-color: var(--accent-color-dark);
+    background-color: #e1ad2b;
 }
 
 /* Responsive Design */

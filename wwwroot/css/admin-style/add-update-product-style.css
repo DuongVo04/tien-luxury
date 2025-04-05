@@ -95,7 +95,10 @@ label {
 .description-area {
     flex: 1;
     resize: none;
-    min-height: 300px;
+    min-height: 600px;
+}
+.note-editable {
+    min-height: 600px !important;
 }
 
 .image-preview {

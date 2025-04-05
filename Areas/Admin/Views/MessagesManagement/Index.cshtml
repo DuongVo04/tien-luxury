@@ -1,10 +1,18 @@
 @model MessageListViewModel
 
+@{
+    ViewData["Title"] = "Messages Management";
+}
+
 <link href="~/css/admin-style/messages-management.css" rel="stylesheet">
 
 <nav class="navbar navbar-light">
-    <div class="container-fluid">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
         <span class="navbar-brand">Messages Management</span>
+        
+        <div class="datetime-container">
+            <span class="datetime-label">Hiện tại: <span id="datetime"></span></span>
+        </div>
     </div>
 </nav>
 
@@ -20,8 +28,10 @@
             {
                 <div class="message-item" data-id="@m.Id" data-name="@m.CustomerName" data-email="@m.Email"
                     data-phone="@m.PhoneNumber" data-content="@m.Content.Replace("\"", "&quot;")">
-
-                    <div class="message-name">@m.CustomerName</div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="message-name">@m.CustomerName</div>
+                        <div class="message-date">@m.CreatedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</div>
+                    </div>
                     <div class="message-email">@m.Email</div>
                     <div class="message-phone">@m.PhoneNumber</div>
                 </div>

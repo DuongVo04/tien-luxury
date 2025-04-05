@@ -7,71 +7,77 @@
 <link href="~/css/admin-style/service-reservation-management-style.css" rel="stylesheet" />
 
 <nav class="navbar navbar-light">
-    <div class="container-fluid">
-        <span class="navbar-brand">Reservation Management</span>
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <span class="navbar-brand">Reservations Management</span>
+
+        <div class="datetime-container">
+            <span class="datetime-label">Hiện tại: <span id="datetime"></span></span>
+        </div>
     </div>
 </nav>
 
+
 <div class="service-reservation-container" id="reservation">
-    <div class="container">
-        <div class="table-wrapper">
-            <div class="table-header">
-                <h2>Danh Sách đặt lịch</h2>
-                <div class="filter-container">
-                    <label>Lọc theo tình trạng: </label>
-                    <select id="statusFilter" onchange="filterByStatus()">
-                        <option value="all">Tất cả</option>
-                        <option value="chua_ghe">Chưa ghé</option>
-                        <option value="da_ghe">Đã ghé</option>
-                        <option value="da_huy">Đã hủy</option>
-                    </select>
-                </div>
-            </div>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Họ và Tên</th>
-                            <th>Số Điện Thoại</th>
-                            <th>Ngày Tạo</th>
-                            <th>Ngày Đặt</th>
-                            <th>Tình Trạng</th>
-                            <th>Hành Động</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
-                        @{
-                            foreach (var r in Model.Reservations)
-                            {
-                                <tr data-reservation-id="@r.ID">
-                                    <td>@r.ID</td>
-                                    <td>@r.FullName</td>
-                                    <td>@r.PhoneNumber</td>
-                                    <td>@r.CreatedDate.ToLocalTime().ToString("dd/MM/yyyy")</td>
-                                    <td>@r.ReservationDate.ToLocalTime()</td>
-                                    <td>
-                                        <span class="status-text" data-status="@r.ReservationStatus">@r.ReservationStatus</span>
-                                    </td>
-                                    <td class="button-cell">
-                                        <div class="button-group">
-                                            <button class="edit-btn" id="updateReservationBtn">
-                                                <i class="fas fa-edit"></i> Chỉnh Sửa
-                                            </button>
-                                            <button class="delete-btn" onclick="deleteService(this)">
-                                                <i class="fas fa-trash"></i> Xóa
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            }
-                        }
-                    </tbody>
-                </table>
+
+    <div class="table-wrapper">
+        <div class="table-header">
+            <h2>Danh Sách Đặt Lịch</h2>
+            <div class="filter-container">
+                <label>Lọc: </label>
+                <select id="statusFilter" onchange="filterByStatus(this.value)">
+                    <option value="all">Tất cả</option>
+                    <option value="Chưa ghé">Chưa ghé</option>
+                    <option value="Đã ghé">Đã ghé</option>
+                    <option value="Đã hủy">Đã hủy</option>
+                </select>
+                <input id="input-date" class="dateFitler" type="date" onchange="filterByDate(this.value)" />
+                <button class="reset-date-button" onclick="document.getElementById('input-date').value=''; filterByDate('')">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </button>
+
             </div>
         </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Họ và Tên</th>
+                        <th>Số Điện Thoại</th>
+                        <th>Ngày Hẹn</th>
+                        <th>Tình Trạng</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    @{
+                        foreach (var r in Model.Reservations)
+                        {
+                            <tr class="order-row" data-reservation-id="@r.ID">
+                                <td>@r.ID</td>
+                                <td>@r.FullName</td>
+                                <td>@r.PhoneNumber</td>
+                                <td class="date-text">@r.ReservationDate.ToLocalTime()</td>
+                                <td>
+                                    <span class="status-text" data-status="@r.ReservationStatus">@r.ReservationStatus</span>
+                                </td>
+                                <td class="button-cell">
+                                    <div class="button-group">
+                                        <button class="edit-btn" id="updateReservationBtn">
+                                            <i class="fas fa-edit"></i> Chỉnh Sửa
+                                        </button>
+                                        <button class="delete-btn" onclick="deleteService(this)">
+                                            <i class="fas fa-trash"></i> Xóa
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
-
 
     <div class="modal-overlay" id="reservationFormContainer" style="display: none;">
         <div class="modal-content">
