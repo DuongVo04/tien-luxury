@@ -9,7 +9,7 @@ namespace MinhTienHairSalon.Services
         private readonly DBContext _dbContext = dbContext;
 
         public async Task<List<Invoice>> GetAll()
-            => await _dbContext.Invoices.ToListAsync();
+            => await _dbContext.Invoices.OrderBy(i => i.CreatedDate).ToListAsync();
         
         public async Task<ObjectId> CreateInvoice(Invoice newInvoice)
         {
@@ -19,12 +19,9 @@ namespace MinhTienHairSalon.Services
             _dbContext.ChangeTracker.DetectChanges();
             Console.WriteLine(_dbContext.ChangeTracker.DebugView.LongView);
     
-            _dbContext.SaveChanges();
             return newInvoice.ID;
 
         }
-
-        
 
         public async Task UpdateStatusInvoice(Invoice invoiceToUpdate)
         {
