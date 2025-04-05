@@ -1,5 +1,9 @@
 @model InvoiceUpdateVIewModel
 
+@{
+    ViewData["Title"] = "Update Invoice Status";
+}
+
 <link href="~/css/admin-style/update-invoice-style.css" rel="stylesheet">
 
 <nav class="navbar navbar-light">
@@ -11,6 +15,10 @@
             </a>
             <strong style="font-size: 0.8rem; color: #656060;">@Model.Invoice.ID</strong>
         </span>
+        
+        <div class="datetime-container">
+            <span class="datetime-label">Hiện tại: <span id="datetime"></span></span>
+        </div>
     </div>
 </nav>
 
@@ -40,7 +48,7 @@
                         <option value="Đã xử lý">Đã xử lý</option>
                         <option value="Hủy đơn">Hủy đơn</option>
                     </select>
-                    <button type="submit">Lưu</button>
+                    <button class="save-btn" type="submit">Lưu</button>
                 </form>
                 </p>
             </div>

@@ -1,27 +1,35 @@
 ﻿body {
-    background: linear-gradient(135deg, #f5f5dc, #f7f7d1);
-    height: 100vh;
-    display: flex;
-    font-size: clamp(16px, 2vw, 20px);
-    align-items: center;
+    /* display: flex;
     justify-content: center;
-    gap: 10vw;
-    flex-direction: column;
+    align-items: center; */
+
+    background: linear-gradient(150deg, #f5f5ed, #ede4be);
+    min-height: 100vh;
+    font-size: clamp(16px, 2vw, 20px);
+    padding: 20px;
+    animation: fadeIn 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0.5rem auto;
     padding: 20px;
 }
 
+/* Form đăng nhập */
 .login-container {
-    background: #f8e8afdd; /* Beige nhạt */
+    background: #f4f1d6;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 90%;
+    width: 100%;
     max-width: 400px;
     font-size: 1rem;
+    margin: 2.5rem auto;
 }
 
 input.form-control {
-    border: 1px solid #D2B48C; /* Viền mặc định mỏng hơn */
+    border: 1px solid #D2B48C;
     border-radius: 10px;
     padding: 10px;
     font-size: 16px;
@@ -29,13 +37,11 @@ input.form-control {
     color: #3E3E3E;
 }
 
-
-    input.form-control:focus {
-        border: 2px solid #A89078 !important; /* Đảm bảo Bootstrap không ghi đè */
-        outline: none !important; /* Loại bỏ hiệu ứng mặc định của Bootstrap */
-        box-shadow: 0px 0px 5px rgba(168, 144, 120, 0.5) !important; /* Tạo hiệu ứng nhẹ */
-    }
-
+input.form-control:focus {
+    border: 2px solid #A89078 !important;
+    outline: none !important;
+    box-shadow: 0px 0px 5px rgba(168, 144, 120, 0.5) !important;
+}
 
 /* Nút Xác nhận */
 .btn-custom {
@@ -44,29 +50,72 @@ input.form-control {
     color: white;
 }
 
-    .btn-custom:hover {
-        background: #A89078;
-    }
-
+.btn-custom:hover {
+    background: #A89078;
+}
 
 h1 {
     font-size: clamp(2.5rem, 5vw, 5rem);
-    text-align: center;
+    margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.8rem;
 }
 
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        gap: 5vh;
-    }
+.brand-text {
+    padding: 20px;
+}
 
-    .login-container {
-        width: 100%;
-        max-width: 90%;
+.tien-luxury-container {
+    display: flex;
+    align-items: stretch;
+    max-height: 85px;
+    justify-content: center;
+}
+  
+.tien {
+    font-size: 80px;
+    font-weight: bold;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+  
+.right-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+}
+  
+.luxury {
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+}
+
+.luxury::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 80%;
+    height: 2px;
+    background-color: black;
+}
+  
+.slogan {
+    font-size: 20px;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

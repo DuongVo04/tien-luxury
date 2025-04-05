@@ -10,6 +10,7 @@ namespace MinhTienHairSalon.Models
         private string customerName;
         private string phoneNumber;
         private string? email = "";
+        private DateTime createdAt = DateTime.Now;
         private string content;
 
         public ObjectId Id { get => id; set => id = value; }
@@ -17,5 +18,6 @@ namespace MinhTienHairSalon.Models
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
         public string Content { get => content; set => content = value; }
         public string? Email { get => email; set => email = value; }
+        public DateTime CreatedAt { get => createdAt; set => createdAt = value; }
     }
 }

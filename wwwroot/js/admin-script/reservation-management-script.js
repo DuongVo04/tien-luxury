@@ -11,6 +11,51 @@
   }, 300);
 }
 
+function filterByStatus(status) {
+  const rows = document.querySelectorAll('.order-row');
+
+  rows.forEach(row => {
+    const statusCell = row.querySelector('.status-text').dataset.status;
+    if (status === "all" || statusCell === status) {
+      row.style.display = "";
+    } else {
+      row.style.display = "none";
+    }
+  });
+}
+
+function extractDateOnly(datetimeStr) {
+
+  const datePart = datetimeStr.trim().split(' ')[0];
+
+  if (datePart.includes('/')) {
+
+    const [day, month, year] = datePart.split('/');
+    return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+  } else if (datePart.includes('-')) {
+
+    return datePart;
+  }
+
+  return '';
+}
+
+function filterByDate(dateInput) {
+  const rows = document.querySelectorAll('.order-row');
+
+  rows.forEach(row => {
+    const datetimeStr = row.querySelector('.date-text').textContent;
+    const dateOnly = extractDateOnly(datetimeStr);
+
+    if (!dateInput || dateOnly === dateInput) {
+      row.style.display = "";
+    } else {
+      row.style.display = "none";
+    }
+  });
+}
+
+
 $(document).ready(function () {
 
   // Gắn sự kiện click cho nút "Chỉnh Sửa"
@@ -33,6 +78,7 @@ $(document).ready(function () {
         console.error('Error loading update form:', error);
       }
     });
+
   });
 
   // $(document).on('click', '#deleteServiceBtn', function (e) {
