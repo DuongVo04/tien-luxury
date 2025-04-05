@@ -2,7 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MinhTienHairSalon.Areas.Admin.Controllers
 {
-    public class DeviceNotSupported : Controller
+    [Area("Admin")]
+    public class DeviceNotSupportedController : Controller
     {
         public IActionResult Index()
         {

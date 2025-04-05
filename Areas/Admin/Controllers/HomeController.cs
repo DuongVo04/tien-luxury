@@ -2,11 +2,13 @@
 using Microsoft.AspNetCore.Mvc;
 using MinhTienHairSalon.Areas.Admin.ViewModels;
 using MinhTienHairSalon.Areas.Admin.Services;
+using MinhTienHairSalon.Areas.Filter;
 
 namespace MinhTienHairSalon.Areas.Admin.Controllers
 {
     [AdminAuth]
     [Area("Admin")]
+    [DesktopOnly]
     [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
     public class HomeController(IAdminAccountService adminAccountService) : Controller
     {

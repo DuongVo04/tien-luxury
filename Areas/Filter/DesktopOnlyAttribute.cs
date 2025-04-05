@@ -11,7 +11,7 @@ namespace MinhTienHairSalon.Areas.Filter
 
             if (userAgent.Contains("mobile") || userAgent.Contains("android") || userAgent.Contains("iphone") || userAgent.Contains("ipad"))
             {
-                context.Result = new RedirectToActionResult("DeviceNotSupported", "Index", null);
+                context.Result = new RedirectToActionResult("Index", "DeviceNotSupported", null);
             }
 
             base.OnActionExecuting(context);

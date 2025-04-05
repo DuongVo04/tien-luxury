@@ -1,7 +1,6 @@
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MinhTienHairSalon.Areas.Admin.ViewModels;
+using MinhTienHairSalon.Areas.Filter;
 using MinhTienHairSalon.Services;
 using MinhTienHairSalon.ViewModels;
 using MongoDB.Bson;
@@ -10,6 +9,7 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
 {
     [AdminAuth]
     [Area("Admin")]
+    [DesktopOnly]
     [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
     public class EmployeesManagementController(IEmployeeService employeeService) : Controller
     {

@@ -3,10 +3,12 @@ using Microsoft.AspNetCore.Authorization;
 using MinhTienHairSalon.Areas.Admin.Services;
 using MinhTienHairSalon.Areas.Admin.ViewModels;
 using System.Threading.Tasks;
+using MinhTienHairSalon.Areas.Filter;
 
 namespace MinhTienHairSalon.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [DesktopOnly]
     public class LoginController(IAdminAccountService adminAccountService) : Controller
     {
         private readonly IAdminAccountService _adminAccountService = adminAccountService;

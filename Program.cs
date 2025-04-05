@@ -16,8 +16,8 @@ CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 // Add services to the container.
-builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddDistributedMemoryCache(); // Cần thiết để sử dụng Session
 // Thêm dịch vụ Session
 builder.Services.AddSession(options =>
 {
@@ -25,9 +25,8 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true; // Bảo mật session
     options.Cookie.IsEssential = true;
 });
+builder.Services.AddControllersWithViews();
 
-builder.Services.AddDistributedMemoryCache(); // Cần thiết để sử dụng Session
-builder.Services.AddDistributedMemoryCache(); // Cần thiết cho Session
 
 //Lower case url
 builder.Services.AddRouting(options => options.LowercaseUrls = true);

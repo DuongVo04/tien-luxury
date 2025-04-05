@@ -4,8 +4,12 @@
 
 <nav class="navbar navbar-light">
     <div class="container-fluid">
-        <span class="navbar-brand">Orders Management / <strong
-                style="font-size: 0.8rem; color: #656060;">@Model.Invoice.ID</strong></span>
+        <span class="navbar-brand">
+            <a href="@Url.Action("Index", "OrdersManagement")" style="text-decoration: none; color: inherit; cursor: pointer;">
+                Orders Management / 
+            </a>
+            <strong style="font-size: 0.8rem; color: #656060;">@Model.Invoice.ID</strong>
+        </span>
     </div>
 </nav>
 
@@ -41,10 +45,10 @@
             <table class="order-items">
                 <thead>
                     <tr>
-                        <th>Hình ảnh</th>
-                        <th>Sản phẩm</th>
-                        <th>Số lượng</th>
-                        <th>Giá</th>
+                        <th class="col-image">Hình ảnh</th>
+                        <th class="col-product-name">Sản phẩm</th>
+                        <th class="col-quantty">Số lượng</th>
+                        <th class="col-price">Giá</th>
                     </tr>
                 </thead>
                 <tbody id="orderItems">
@@ -52,10 +56,12 @@
                         foreach (var p in Model.Items)
                         {
                             <tr>
-                                <td><img src="@p.ImagePath" alt="Sản phẩm"></td>
-                                <td>@p.ProductName</td>
-                                <td>@p.Quantity</td>
-                                <td>@p.ProductPrice.ToString("C0")</td>
+                                <td class="col-image">
+                                    <img src="@p.ImagePath" alt="Sản phẩm">
+                                </td>
+                                <td class="col-product-name" >@p.ProductName</td>
+                                <td class="col-quantty">@p.Quantity</td>
+                                <td class="col-price">@p.ProductPrice.ToString("C0")</td>
                             </tr>
                         }
                     }
