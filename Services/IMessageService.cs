@@ -9,6 +9,7 @@ namespace MinhTienHairSalon.Services
         public Task CreateMessage(Message message);
         public Task DeleteMessage(Message message);
         public Task<Message> FindMessageById(ObjectId id);
+        public Task<Message> GetMessageById(ObjectId id);
 
     }
 }

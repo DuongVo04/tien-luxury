@@ -50,12 +50,28 @@
     /* 32px */
 }
 
-
 /* Reset và Base Styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #b6b6b7
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
 }
 
 html {
@@ -314,4 +330,3 @@ a:hover {
 
     /* Hoặc chuyển navigation thành dạng dropdown */
 }
-
