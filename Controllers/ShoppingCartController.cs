@@ -124,7 +124,7 @@ namespace MinhTienHairSalon.Controllers
                         await _invoiceDetailService.CreateInvoiceDetail(detail);
 
                         newInvoice.InvoiceDetails.Add(detail);
-                        _productService.MinusQuantityInStock(ObjectId.Parse(c.ProductID), c.Quantity);
+                        await _productService.MinusQuantityInStock(ObjectId.Parse(c.ProductID), c.Quantity);
 
                     }
 

@@ -35,6 +35,7 @@
                         <thead style="position: sticky; top: 0; background: var(--card-color); z-index: 10;">
                             <tr>
                                 <th>Mã đơn</th>
+                                <th>Ngày đặt</th>
                                 <th>Khách hàng</th>
                                 <th>SĐT</th>
                                 <th>Địa chỉ</th>
@@ -48,6 +49,7 @@
                                 {   
                                     <tr class="order-row" onclick="window.location='@Url.Action("UpdateInvoiceStatus", "OrdersManagement", new { invoiceID = i.ID })'">
                                         <td>@i.ID</td>
+                                        <td>@i.CreatedDate.ToString("dd/MM/yyyy")</td>
                                         <td>@i.CustomerName</td>
                                         <td>@i.PhoneNumber</td>
                                         <td>@i.Address</td>
