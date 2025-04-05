@@ -41,9 +41,8 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
 
         [HttpGet]
         public IActionResult ChangePassword()
-        {
-            return PartialView();
-        }
+            => PartialView();
+
 
         [HttpPost]
         public IActionResult ChangePassword(string oldPassword, string newPassword, string confirmPassword)
@@ -64,28 +63,27 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
         }
 
         public IActionResult ServicesManagement()
-        {
-            return RedirectToAction("Index", "ServicesManagement");
-        }
+            => RedirectToAction("Index", "ServicesManagement");
+
 
         public IActionResult ProductsManagement()
-        {
-            return RedirectToAction("Index", "ProductsManagement");
-        }
+            => RedirectToAction("Index", "ProductsManagement");
+
 
         public IActionResult OrdersManagement()
-        {
-            return RedirectToAction("Index", "OrdersManagement");
-        }
+            => RedirectToAction("Index", "OrdersManagement");
+
 
         public IActionResult ReservationsManagement()
-        {
-            return RedirectToAction("Index", "ReservationsManagement");
-        }
+            => RedirectToAction("Index", "ReservationsManagement");
+
 
         public IActionResult EmployeesManagement()
-        {
-            return RedirectToAction("Index", "EmployeesManagement");
-        }
+            => RedirectToAction("Index", "EmployeesManagement");
+
+
+        public IActionResult MessagesManagement()
+            => RedirectToAction("Index", "MessagesManagement");
+
     }
 }
