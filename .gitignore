@@ -1,0 +1,22 @@
+# Build folders
+bin/
+obj/
+
+# IDE files (VS Code, JetBrains IDEs)
+.vscode/
+.idea/
+
+# Environment files
+.env
+appsettings.*.json
+
+# Log files
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+#vs directory
+.vs/
