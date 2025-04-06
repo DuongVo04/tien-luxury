@@ -12,7 +12,7 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
     [DesktopOnly]
     [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
     public class ReservationsManagementController(IReservationService reservationService, IServiceService serviceService, IReservationDetailService reservationDetailService) : Controller
-    {   
+    {
         private readonly IReservationService _reservationService = reservationService;
         private readonly IServiceService _serviceService = serviceService;
         private readonly IReservationDetailService _reservationDetailService = reservationDetailService;
@@ -47,7 +47,7 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
 
                 IEnumerable<Service> allServices = await _serviceService.GetAllServices();
 
-                foreach(ReservationDetail d in details)
+                foreach (ReservationDetail d in details)
                 {
                     servicesBooked.Add(allServices.FirstOrDefault(s => s.ID == d.ServiceID));
                 }
@@ -58,7 +58,7 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
                     Services = servicesBooked
                 };
 
-                return  View(model);
+                return View(model);
             }
             return Json(new { success = false, message = "Reservation not found" });
         }
@@ -73,6 +73,35 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
                 return Redirect("Index");
             }
             return Json(new { success = false, message = "Update failed" });
+        }
+
+        [HttpGet]
+        public IActionResult DeleteComfirmation()
+            => View();
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteReservation(ObjectId id)
+        {
+            Reservation? reservation = await _reservationService.GetBookingByID(id);
+            if (reservation != null)
+            {
+                var reservationDetails = await _reservationDetailService.GetAllDetailsByReservationID(id);
+                if (reservationDetails != null && reservationDetails.Count() > 0)
+                {
+                    foreach (var detail in reservationDetails)
+                    {
+                        await _reservationDetailService.DeleteReservationDetail(detail.ReservationID);
+                    }
+                }
+                
+                await _reservationService.DeleteReservation(reservation.ID);
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return Json(new { success = false, message = "Reservation not found" });
+            }
         }
     }
 }

@@ -8,6 +8,7 @@ namespace MinhTienHairSalon.Services
         public Task<ObjectId> AddReservation(Reservation newReservation);
 
         public Task UpdateReservationStatus(Reservation reservationToUpdate);
+        public Task DeleteReservation(ObjectId id);
 
         public Task<IEnumerable<Reservation>> GetAllReservation();
 
