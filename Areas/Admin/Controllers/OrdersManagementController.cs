@@ -86,5 +86,36 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
             return RedirectToAction("Index");
 
         }
+
+        [HttpGet]
+        public IActionResult DeleteConfirmation()
+            => View();
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteInvoice(ObjectId id)
+        {
+            var invoice = await _invoiceService.GetInvoiceById(id);
+            if (invoice == null)
+            {
+                return NotFound("Invoice not found.");
+            }
+
+            var invoiceDetails = await _invoiceDetailService.GetDetailsByInvoiceId(id);
+            foreach (var detail in invoiceDetails)
+            {
+                if (invoice.Status != "Đã xử lý")
+                {
+                    await _productService.MinusQuantityInStock(detail.ProductId, -detail.Quantity);
+                }
+
+                await _invoiceDetailService.DeleteInvoiceDetail(invoice.ID);
+            }
+
+            await _invoiceService.DeleteInvoice(invoice.ID);
+
+            TempData["SuccessMessage"] = "Invoice deleted successfully.";
+            return RedirectToAction("Index");
+        }
+
     }
 }

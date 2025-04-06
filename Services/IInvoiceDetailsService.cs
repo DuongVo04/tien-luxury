@@ -7,6 +7,7 @@ namespace MinhTienHairSalon.Services
     {
         public Task CreateInvoiceDetail(ObjectId invoiceId, ObjectId productId, int quantity);
         public Task CreateInvoiceDetail(InvoiceDetail detail);
+        public Task DeleteInvoiceDetail(ObjectId invoiceId);
         public Task<List<InvoiceDetail>> GetDetailsByInvoiceId(ObjectId invoiceId);
     }
 }
