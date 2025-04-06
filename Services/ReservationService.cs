@@ -34,6 +34,16 @@ namespace HairSalonWeb.Services
             await _dbContext.SaveChangesAsync();
         }
 
+        public async Task DeleteReservation(ObjectId id)
+        {
+            var reservation = await _dbContext.Reservations.FindAsync(id);
+            if (reservation != null)
+            {
+                _dbContext.Reservations.Remove(reservation);
+                await _dbContext.SaveChangesAsync();
+            }
+        }
+
         public async Task<IEnumerable<Reservation>> GetAllReservation()
             => await _dbContext.Reservations.OrderBy(booking => booking.ReservationDate).Take(50).ToListAsync();
             

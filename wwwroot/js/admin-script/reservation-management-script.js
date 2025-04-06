@@ -81,20 +81,44 @@ $(document).ready(function () {
 
   });
 
-  // $(document).on('click', '#deleteServiceBtn', function (e) {
-  //     e.preventDefault();
-  //     var serviceId = $(this).closest('tr').data('service-id');
-  //     $.ajax({
-  //         url: "/Admin/ServicesManagement/DeleteService",
-  //         type: "GET",
-  //         data: { id: serviceId },
-  //         success: function (data) {
-  //             $("#serviceFormContainer").html(data);
-  //             $("#serviceFormContainer").show();
-  //         },
-  //         error: function (xhr, status, error) {
-  //             console.error('Error loading update form:', error);
-  //         }
-  //     });
-  // });
+  $(document).on('click', '#deleteReservationBtn', function (e) {
+
+    e.preventDefault();
+
+    var reservationId = $(this).closest('tr').data('reservation-id');
+    $.ajax({
+      url: "/Admin/ReservationsManagement/DeleteComfirmation",
+      type: "GET",
+      data: { id: reservationId },
+      success: function (data) {
+
+        $("#reservationFormContainer").html(data);
+        $("#reservationFormContainer").show();
+
+        $("#reservationFormContainer").find('.confirm-btn').click(function (e) {
+
+          e.preventDefault();
+
+          $.ajax({
+            url: "/Admin/ReservationsManagement/DeleteReservation",
+            type: 'POST',
+            data: { id: reservationId },
+            success: function () {
+              window.location.href = "/Admin/ReservationsManagement/Index";
+            },
+            error: function () {
+              alert('Có lỗi xảy ra khi xóa lịch hẹn!');
+              modal.remove();
+            }
+          });
+
+        });
+
+      },
+      error: function (xhr, status, error) {
+        console.error('Error loading update form:', error);
+      }
+    });
+  });
+
 });

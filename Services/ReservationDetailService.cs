@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using MinhTienHairSalon.Models;
 using MongoDB.Bson;
 
@@ -15,6 +16,16 @@ namespace MinhTienHairSalon.Services
             Console.WriteLine(_dbContext.ChangeTracker.DebugView.LongView);
 
             await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteReservationDetail(ObjectId id)
+        {
+            var reservationDetail = await _dbContext.ReservationDetails.FirstOrDefaultAsync(i => i.ReservationID == id);
+            if (reservationDetail != null)
+            {
+                _dbContext.ReservationDetails.Remove(reservationDetail);
+                await _dbContext.SaveChangesAsync();
+            }
         }
 
         public async Task<IEnumerable<ReservationDetail>> GetAllDetailsByReservationID(ObjectId reservationId)
