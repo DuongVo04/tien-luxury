@@ -26,15 +26,20 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
 
         }
 
+        [HttpPost]
         public async Task<IActionResult> DeleteMessage(ObjectId id)
         {
             var message = await _messagesService.GetMessageById(id);
             if (message == null)
             {
-                return NotFound();
+                return Json(new { success = false });
             }
+
             await _messagesService.DeleteMessage(message);
-            return RedirectToAction("Index", "MessagesManagement");
+
+            var redirectUrl = Url.Action("Index", "MessagesManagement");
+            return Json(new { success = true, redirectUrl });
         }
+
     }
 }

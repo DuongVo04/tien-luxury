@@ -1,25 +1,12 @@
 <link href="~/css/non-admin-style/mesage-successful.css" rel="stylesheet">
 
-@{
-    if (ViewBag.Message == "Successful")
-    {
-        <div class="notification-container">
-            <div class="notification-card">
-                <div class="icon-success">✓</div>
-                <h1>Gửi tin nhắn thành công!</h1>
-                <p>Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi đã nhận được tin nhắn của bạn và sẽ phản hồi trong thời gian
-                    sớm nhất.</p>
-                <button class="btn-return" onclick="window.location.href='/'">Quay lại trang chủ</button>
-            </div>
-        </div>
-    }
-    else
-    {
-        <div class="error-404">
-            <script src="https://unpkg.com/@@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-                type="module"></script>
-            <dotlottie-player src="https://lottie.host/20861518-cfd1-4f39-b48c-0cba3822036b/zcgpZFrg3Z.lottie"
-                background="transparent" speed="1" style="width: 600px; height: 600px" loop autoplay></dotlottie-player>
-        </div>
-    }
-}
+
+<div class="notification-container">
+    <div class="notification-card">
+        <div class="icon-success">✓</div>
+        <h1>Gửi tin nhắn thành công!</h1>
+        <p>Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi đã nhận được tin nhắn của bạn và sẽ phản hồi trong thời gian
+            sớm nhất.</p>
+        <button class="btn-return" onclick="window.location.href='/'">Quay lại trang chủ</button>
+    </div>
+</div>

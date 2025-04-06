@@ -125,6 +125,10 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
             return Json(new { success = false, errors });
         }
 
+        [HttpGet]
+        public IActionResult DeleteComfirmation()
+            => View();
+
         public async Task<IActionResult> DeleteEmployee(ObjectId id)
         {
             await _employeeService.DeleteEmployee(id);

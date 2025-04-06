@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         if (activeItem) {
                             activeItem.remove();
                         }
+                        
+                        // window.location.href = response.redirectUrl;
 
                         document.getElementById('message-detail').classList.add('hidden');
                     } else {

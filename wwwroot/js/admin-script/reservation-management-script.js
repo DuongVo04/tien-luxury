@@ -108,7 +108,7 @@ $(document).ready(function () {
             },
             error: function () {
               alert('Có lỗi xảy ra khi xóa lịch hẹn!');
-              modal.remove();
+              $("#reservationFormContainer").remove();
             }
           });
 
