@@ -36,7 +36,7 @@ $(document).ready(function () {
         $.ajax({
             url: "/Admin/EmployeesManagement/UpdateEmployee", // URL đến action xử lý yêu cầu AJAX
             type: "GET",
-            data: { id: serviceId },
+            data: { id: employeeId },
             success: function (data) {
                 $("#employeeFormContainer").html(data);
                 $("#employeeFormContainer").show();
@@ -48,15 +48,38 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '#deleteEmployeeBtn', function (e) {
+
         e.preventDefault();
-        var serviceId = $(this).closest('tr').data('employee-id');
+
+        var employeeId = $(this).closest('tr').data('employee-id');
+
         $.ajax({
-            url: "/Admin/EmployeesManagement/DeleteEmployee",
+            url: "/Admin/EmployeesManagement/DeleteComfirmation",
             type: "GET",
-            data: { id: serviceId },
+            data: { id: employeeId },
             success: function (data) {
                 $("#employeeFormContainer").html(data);
                 $("#employeeFormContainer").show();
+
+                $("#employeeFormContainer").find('.confirm-btn').click(function (e) {
+
+                    e.preventDefault();
+
+                    $.ajax({
+                        url: "/Admin/EmployeesManagement/DeleteEmployee",
+                        type: 'POST',
+                        data: { id: employeeId },
+                        success: function () {
+                            window.location.href = "/Admin/EmployeesManagement/Index";
+                        },
+                        error: function () {
+                            alert('Có lỗi xảy ra khi xóa nhân viên!');
+                            $("#employeeFormContainer").remove();
+                        }
+                    });
+
+                });
+
             },
             error: function (xhr, status, error) {
                 console.error('Error loading update form:', error);

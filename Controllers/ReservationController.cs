@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MinhTienHairSalon.Models;
 using MinhTienHairSalon.Services;
@@ -58,10 +59,10 @@ namespace MinhTienHairSalon.Controllers
 
             IEnumerable<Service> allServices = await _seviceService.GetAllServicesActivated();
 
-            ReservationViewModel model = new()
-            {
-                Services = new()
-            };
+            // ReservationViewModel model = new()
+            // {
+            //     Services = new()
+            // };
 
             Reservation reservation = new()
             {
@@ -71,14 +72,14 @@ namespace MinhTienHairSalon.Controllers
                 CreatedDate = DateTime.Now
             };
 
-            model.Reservation = reservation;
+            // model.Reservation = reservation;
             reservation.ID = await _reservationService.AddReservation(reservation);
             
             foreach (string id in selectedIds)
             {
                 Service service =  allServices.FirstOrDefault(s => s.ID.ToString() == id);
 
-                model.Services.Add(service);
+                // model.Services.Add(service);
 
                 if (service != null)
                 {
@@ -92,14 +93,34 @@ namespace MinhTienHairSalon.Controllers
 
                 }
             }
-                        
-            return View("Successful", model);
+
+            // TempData["ReservationId"] = reservation.ID.ToString();
+            return RedirectToAction("Successful", "Reservation", new { id = reservation.ID});
+            // return View("Successful", model);
         }
 
-        public IActionResult Successful()
+        public async Task<IActionResult> Successful(ObjectId id)
         {
-            return View();
-        }
+            Reservation? reservation = await _reservationService.GetBookingByID(id);
 
+            if (reservation == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            IEnumerable<Service> allServices = await _seviceService.GetAllServicesActivated();
+            IEnumerable<ReservationDetail> reservationDetails = await _reservationDetailService.GetAllDetailsByReservationID(id);
+
+            ReservationViewModel model = new()
+            {
+                Reservation = reservation,
+                Services = reservationDetails
+                    .Select(d => allServices.FirstOrDefault(s => s.ID == d.ServiceID))
+                    .Where(s => s != null).ToList()!
+            };
+
+            return View(model);
+        }
+        
     }
 }
