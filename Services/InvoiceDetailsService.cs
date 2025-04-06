@@ -41,6 +41,16 @@ namespace MinhTienHairSalon.Services
             await _dbContext.SaveChangesAsync();
         }
 
+        public async Task DeleteInvoiceDetail(ObjectId invoiceId)
+        {
+            var detail = await _dbContext.InvoiceDetails.FirstOrDefaultAsync(d => d.InvoiceId == invoiceId);
+            if (detail != null)
+            {
+                _dbContext.InvoiceDetails.Remove(detail);
+                await _dbContext.SaveChangesAsync();
+            }
+        }
+
         public async Task<List<InvoiceDetail>> GetDetailsByInvoiceId(ObjectId invoiceId)
             => await _dbContext.InvoiceDetails.Where(d => d.InvoiceId == invoiceId).ToListAsync();
     }

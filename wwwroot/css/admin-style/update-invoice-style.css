@@ -176,7 +176,6 @@
 .status-form button {
     margin-left: 10px;
     padding: 8px 15px;
-    background: var(--accent-color);
     color: white;
     border: none;
     border-radius: 5px;
@@ -184,8 +183,21 @@
     transition: background-color var(--transition-speed);
 }
 
-.status-form button:hover {
+.save-btn{
+    background: var(--accent-color);
+}
+
+.save-btn:hover {
     background-color: #e1ad2b;
+}
+
+.delete-btn {
+    background: #da0c05;
+}
+
+.delete-btn:hover {
+    background-color: #f5524d;
+
 }
 
 /* Responsive Design */

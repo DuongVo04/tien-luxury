@@ -53,5 +53,19 @@ namespace MinhTienHairSalon.Services
         public async Task<IEnumerable<Invoice>> GetInvoicesByPhoneNumber(string phoneNumber)
             => await _dbContext.Invoices.Where(i => i.PhoneNumber == phoneNumber).ToListAsync();
 
+        public async Task DeleteInvoice(ObjectId id)
+        {
+            var invoice = await _dbContext.Invoices.FirstOrDefaultAsync(i => i.ID == id) ?? throw new InvalidOperationException("Invoice not found");
+
+            if (invoice != null)
+            {
+                _dbContext.Invoices.Remove(invoice);
+                await _dbContext.SaveChangesAsync();
+            }
+            else
+            {
+                throw new InvalidOperationException("Invoice not found");
+            }
+        }
     }
 }

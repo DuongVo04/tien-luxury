@@ -19,13 +19,13 @@
 /* Form đăng nhập */
 .login-container {
     background: #f4f1d6;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
     font-size: 1rem;
-    margin: 2.5rem auto;
+    margin: 1rem auto;
 }
 
 input.form-control {
@@ -60,6 +60,7 @@ h1 {
 }
 
 h2 {
+    margin: 2rem;
     padding: 1rem 0;
     font-size: 1.8rem;
 }
