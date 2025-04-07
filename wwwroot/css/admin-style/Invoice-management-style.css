@@ -174,11 +174,11 @@
 }
 
 .status[data-status="Đã xử lý"] {
-    background-color: #d9534f;
+    background-color: #5cb85c;
 }
 
 .status[data-status="Hủy đơn"] {
-    background-color: #5cb85c;
+    background-color: #d9534f;
 }
 
 /* Responsive design */
