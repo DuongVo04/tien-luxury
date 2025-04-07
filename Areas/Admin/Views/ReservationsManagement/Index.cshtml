@@ -57,7 +57,7 @@
                                 <td>@r.ID</td>
                                 <td>@r.FullName</td>
                                 <td>@r.PhoneNumber</td>
-                                <td class="date-text">@r.ReservationDate.ToLocalTime()</td>
+                                <td class="date-text">@r.ReservationDate.ToLocalTime().ToString("dd/MM/yyy HH:mm")</td>
                                 <td>
                                     <span class="status-text" data-status="@r.ReservationStatus">@r.ReservationStatus</span>
                                 </td>

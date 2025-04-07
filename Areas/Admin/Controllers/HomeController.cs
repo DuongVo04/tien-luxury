@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using MinhTienHairSalon.Areas.Admin.ViewModels;
 using MinhTienHairSalon.Areas.Admin.Services;
 using MinhTienHairSalon.Areas.Filter;
+using MinhTienHairSalon.Services;
+using System.Threading.Tasks;
 
 namespace MinhTienHairSalon.Areas.Admin.Controllers
 {
@@ -10,15 +12,43 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
     [Area("Admin")]
     [DesktopOnly]
     [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
-    public class HomeController(IAdminAccountService adminAccountService) : Controller
+    public class HomeController(IAdminAccountService adminAccountService, IMessageService messageService,
+        IServiceService serviceService, IProductService productService,
+        IReservationService reservationService, IInvoiceService invoiceService) : Controller
     {
         private readonly IAdminAccountService _adminAccountService = adminAccountService;
+        private readonly IServiceService _serviceService = serviceService;
+        private readonly IProductService _productService = productService;
+        private readonly IReservationService _reservationService = reservationService;
+        private readonly IInvoiceService _invoiceService = invoiceService;
+        private readonly IMessageService _messageService = messageService;
 
         public IActionResult Index()
         {
             if (HttpContext.Session.GetString("AdminLoggedIn") == "true")
             {
-                return View();
+
+                HomeViewModel model = new()
+                {
+                    ReservationsToDay = _reservationService.GetAllReservation().Result.ToList().Count(x => x.ReservationDate == DateTime.Now.Date),
+                    OrdersToday = _invoiceService.GetAllInvoices().Result.ToList().Count(x => x.Status == "Đang xử lý"),
+                    NumberOfServices = _serviceService.GetAllServices().Result.ToList().Count,
+                    NumberOfProducts = _productService.GetAllProduct().Result.ToList().Count,
+                };
+
+                model.MearestAppointment = _reservationService.GetAllReservation().Result.ToList()
+                    .Where(x => x.ReservationDate >= DateTime.Now)
+                    .OrderBy(x => x.ReservationDate).FirstOrDefault(x => x.ReservationStatus == "Chưa ghé")?.ReservationDate ?? DateTime.Now.Date;
+
+                model.LastOrder = (DateTime.Now - _invoiceService.GetAllInvoices().Result.ToList()
+                    .OrderByDescending(x => x.CreatedDate)?
+                    .FirstOrDefault(x => x.Status == "Đang xử lý")?.CreatedDate.ToLocalTime())?.Hours ?? 0;
+
+                model.LastMessage = (DateTime.Now - _messageService.GetAllMessage().Result.ToList()
+                    .OrderByDescending(x => x.CreatedAt)?
+                    .FirstOrDefault()?.CreatedAt.ToLocalTime())?.Hours ?? 0;
+
+                return View(model);
             }
 
             return RedirectToAction("Index", "Login");
