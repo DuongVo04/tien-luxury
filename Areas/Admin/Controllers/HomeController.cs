@@ -44,8 +44,7 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
                     .OrderByDescending(x => x.CreatedDate)?
                     .FirstOrDefault(x => x.Status == "Đang xử lý")?.CreatedDate.ToLocalTime())?.Hours ?? 0;
 
-                model.LastMessage = (DateTime.Now - _messageService.GetAllMessage().Result.ToList()
-                    .OrderByDescending(x => x.CreatedAt)?
+                model.LastMessage = (DateTime.Now - _messageService.GetAllMessage().Result.ToList()?
                     .FirstOrDefault()?.CreatedAt.ToLocalTime())?.Hours ?? 0;
 
                 return View(model);
