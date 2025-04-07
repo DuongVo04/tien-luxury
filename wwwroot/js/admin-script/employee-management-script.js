@@ -31,7 +31,7 @@ $(document).ready(function () {
     $(document).on('click', '#updateEmployeeBtn', function (e) {
         e.preventDefault();
 
-        var serviceId = $(this).closest('tr').data('employee-id'); // Lấy ID của dịch vụ
+        var employeeId = $(this).closest('tr').data('employee-id');
 
         $.ajax({
             url: "/Admin/EmployeesManagement/UpdateEmployee", // URL đến action xử lý yêu cầu AJAX
