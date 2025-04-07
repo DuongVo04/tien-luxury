@@ -34,7 +34,7 @@ namespace MinhTienHairSalon.Services
             => await _dbContext.Messages.FirstOrDefaultAsync();
 
         public async Task<List<Message>> GetAllMessage()
-            => await _dbContext.Messages.Take(100).ToListAsync();
+            => await _dbContext.Messages.Take(100).OrderByDescending(m => m.CreatedAt).ToListAsync();
 
         public async Task<Message> GetMessageById(ObjectId id)
             => await _dbContext.Messages.FirstOrDefaultAsync(m => m.Id == id);
