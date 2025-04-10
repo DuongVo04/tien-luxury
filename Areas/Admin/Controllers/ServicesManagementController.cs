@@ -101,6 +101,7 @@ namespace MinhTienHairSalon.Areas.Admin.Controllers
                     model.Service.Description = service.Description;
                     model.Service.IsActivated = service.IsActivated;
                     model.Service.ImagePath = service.ImagePath;
+                    model.Service.ServiceType = service.ServiceType;
                 }
             }
             return PartialView(model);
