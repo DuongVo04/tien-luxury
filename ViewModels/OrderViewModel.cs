@@ -1,4 +1,4 @@
-namespace MinhTienHairSalon.ViewModels
+namespace TienLuxury.ViewModels
 {
     public class OrderViewModel
     {

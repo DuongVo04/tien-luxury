@@ -1,7 +1,7 @@
 using Humanizer;
 using MongoDB.Bson;
 
-namespace MinhTienHairSalon.ViewModels
+namespace TienLuxury.ViewModels
 {
 
     public class CartItemViewModel

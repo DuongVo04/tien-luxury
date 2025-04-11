@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using MinhTienHairSalon.Services;
-using MinhTienHairSalon.ViewModels;
+using TienLuxury.Services;
+using TienLuxury.ViewModels;
 
 public class ContactController(IMessageService messageService) : Controller
 {

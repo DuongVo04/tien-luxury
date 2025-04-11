@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using MongoDB.Bson;
 using MongoDB.EntityFrameworkCore;
 
-namespace MinhTienHairSalon.Models
+namespace TienLuxury.Models
 {
 
     [Collection("invoice")]

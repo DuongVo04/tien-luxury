@@ -1,7 +1,7 @@
-﻿using MinhTienHairSalon.Models;
+﻿using TienLuxury.Models;
 using MongoDB.Bson;
 
-namespace MinhTienHairSalon.Areas.Admin.Services
+namespace TienLuxury.Areas.Admin.Services
 {
     public class AdminAccountService(DBContext hairSalonDbContext) : IAdminAccountService
     {

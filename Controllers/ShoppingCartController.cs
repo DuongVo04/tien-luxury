@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
-using MinhTienHairSalon.Helpers;
-using MinhTienHairSalon.Models;
-using MinhTienHairSalon.Services;
-using MinhTienHairSalon.ViewModels;
+using TienLuxury.Helpers;
+using TienLuxury.Models;
+using TienLuxury.Services;
+using TienLuxury.ViewModels;
 using MongoDB.Bson;
 
-namespace MinhTienHairSalon.Controllers
+namespace TienLuxury.Controllers
 {
     public class ShoppingCartController(IInvoiceService invoiceService, IInvoiceDetailsService invoiceDetailsService, IProductService productService) : Controller
     {

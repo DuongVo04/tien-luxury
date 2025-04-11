@@ -1,6 +1,6 @@
-using MinhTienHairSalon.Models;
+using TienLuxury.Models;
 
-namespace MinhTienHairSalon.ViewModels
+namespace TienLuxury.ViewModels
 {
     public class SuccessfulViewModel
     {

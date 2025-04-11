@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MinhTienHairSalon.Models;
-using MinhTienHairSalon.Areas.Admin.Services;
-using MinhTienHairSalon.Services;
-using MinhTienHairSalon.Data;
+using TienLuxury.Models;
+using TienLuxury.Areas.Admin.Services;
+using TienLuxury.Services;
+using TienLuxury.Data;
 using HairSalonWeb.Services;
 using System.Globalization;
 using DotNetEnv;

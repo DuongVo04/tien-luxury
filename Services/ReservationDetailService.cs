@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using MinhTienHairSalon.Models;
+using TienLuxury.Models;
 using MongoDB.Bson;
 
-namespace MinhTienHairSalon.Services
+namespace TienLuxury.Services
 {
     public class ReservationDetailService(DBContext dbContext) : IReservationDetailService
     {
