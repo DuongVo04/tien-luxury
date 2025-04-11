@@ -5,6 +5,9 @@ using MinhTienHairSalon.Services;
 using MinhTienHairSalon.Data;
 using HairSalonWeb.Services;
 using System.Globalization;
+using DotNetEnv;
+
+Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,10 +36,19 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 //Config database
 var mongoDBSettings = builder.Configuration.GetSection("MongoDBSettings").Get<MongoDBSettings>();
+var mongoPassword = Environment.GetEnvironmentVariable("MONGODB_PASSWORD") ?? "";
+var connectionString = mongoDBSettings?.AtlasURI?.Replace("<PASSWORD>", mongoPassword)
+    ?? throw new InvalidOperationException("MongoDBSettings or AtlasURI is not configured properly.");
 builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("MongoDBSettings"));
 
 builder.Services.AddDbContext<DBContext>(options =>
-options.UseMongoDB(mongoDBSettings.AtlasURI ?? "", mongoDBSettings.DatabaseName ?? ""));
+    options.UseMongoDB(connectionString, mongoDBSettings.DatabaseName ?? "")
+);
+Console.WriteLine("MongoDB password: " + mongoPassword);
+if (string.IsNullOrEmpty(mongoPassword))
+{
+    throw new Exception("MONGODB_PASSWORD not found");
+}
 
 builder.Services.AddScoped<IAdminAccountService, AdminAccountService>();
 builder.Services.AddScoped<IServiceService, ServiceService>();
@@ -49,14 +61,6 @@ builder.Services.AddScoped<IInvoiceDetailsService, InvoiceDetailsService>();
 builder.Services.AddScoped<IMessageService, MessageService>();
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
 
 app.UseRequestLocalization(new RequestLocalizationOptions
 {
