@@ -1,8 +1,8 @@
-﻿using MinhTienHairSalon.Models;
+﻿using TienLuxury.Models;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Bson;
 
-namespace MinhTienHairSalon.Services
+namespace TienLuxury.Services
 {
     public class ProductService(DBContext hairSalonDbContext) : IProductService
     {

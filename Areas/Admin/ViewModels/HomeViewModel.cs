@@ -1,4 +1,4 @@
-namespace MinhTienHairSalon.Areas.Admin.ViewModels
+namespace TienLuxury.Areas.Admin.ViewModels
 {
     public class HomeViewModel
     {

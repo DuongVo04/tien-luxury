@@ -1,7 +1,7 @@
-﻿using MinhTienHairSalon.Models;
+﻿using TienLuxury.Models;
 
 using Microsoft.EntityFrameworkCore;
-using MinhTienHairSalon.Services;
+using TienLuxury.Services;
 using MongoDB.Bson;
 
 namespace HairSalonWeb.Services

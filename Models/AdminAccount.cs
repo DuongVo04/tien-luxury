@@ -2,7 +2,7 @@
 using MongoDB.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace MinhTienHairSalon.Models
+namespace TienLuxury.Models
 {
     [Collection("admin-account")]
     public class AdminAccount

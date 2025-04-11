@@ -1,8 +1,8 @@
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
-using MinhTienHairSalon.Models;
+using TienLuxury.Models;
 using MongoDB.Bson;
 
-namespace MinhTienHairSalon.Services
+namespace TienLuxury.Services
 {
     public interface IReservationDetailService
     {

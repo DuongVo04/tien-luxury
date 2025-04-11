@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace MinhTienHairSalon.Helpers
+namespace TienLuxury.Helpers
 {
     public static class SessionHelper
     {

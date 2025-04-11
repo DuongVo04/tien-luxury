@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using MinhTienHairSalon.Areas.Admin.Services;
-using MinhTienHairSalon.Areas.Admin.ViewModels;
+using TienLuxury.Areas.Admin.Services;
+using TienLuxury.Areas.Admin.ViewModels;
 using System.Threading.Tasks;
-using MinhTienHairSalon.Areas.Filter;
+using TienLuxury.Areas.Filter;
 
-namespace MinhTienHairSalon.Areas.Admin.Controllers
+namespace TienLuxury.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [DesktopOnly]

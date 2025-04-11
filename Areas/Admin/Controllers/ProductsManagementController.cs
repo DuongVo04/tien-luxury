@@ -3,14 +3,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using Microsoft.DotNet.Scaffolding.Shared.Project;
-using MinhTienHairSalon.Areas.Admin.ViewModels;
-using MinhTienHairSalon.Areas.Filter;
-using MinhTienHairSalon.Models;
-using MinhTienHairSalon.Services;
-using MinhTienHairSalon.ViewModels;
+using TienLuxury.Areas.Admin.ViewModels;
+using TienLuxury.Areas.Filter;
+using TienLuxury.Models;
+using TienLuxury.Services;
+using TienLuxury.ViewModels;
 using MongoDB.Bson;
 
-namespace MinhTienHairSalon.Areas.Admin.Controllers
+namespace TienLuxury.Areas.Admin.Controllers
 {
     [AdminAuth]
     [Area("Admin")]

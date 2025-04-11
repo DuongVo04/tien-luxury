@@ -1,6 +1,6 @@
-﻿using MinhTienHairSalon.Models;
+﻿using TienLuxury.Models;
 
-namespace MinhTienHairSalon.Areas.Admin.ViewModels
+namespace TienLuxury.Areas.Admin.ViewModels
 {
     public class ProductAddEditViewMode
     {

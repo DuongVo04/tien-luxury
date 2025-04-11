@@ -1,4 +1,4 @@
-﻿namespace MinhTienHairSalon.Data
+﻿namespace TienLuxury.Data
 {
     public class MongoDBSettings
     {

@@ -3,7 +3,7 @@ using MongoDB.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.Drawing;
 
-namespace MinhTienHairSalon.Models
+namespace TienLuxury.Models
 {
     [Collection("service")]
     public class Service

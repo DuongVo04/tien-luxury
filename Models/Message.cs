@@ -1,7 +1,7 @@
 using MongoDB.Bson;
 using MongoDB.EntityFrameworkCore;
 
-namespace MinhTienHairSalon.Models
+namespace TienLuxury.Models
 {
     [Collection("message")]
     public class Message

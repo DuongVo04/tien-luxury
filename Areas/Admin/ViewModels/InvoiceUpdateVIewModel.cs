@@ -1,7 +1,7 @@
-using MinhTienHairSalon.Models;
-using MinhTienHairSalon.ViewModels;
+using TienLuxury.Models;
+using TienLuxury.ViewModels;
 
-namespace MinhTienHairSalon.Areas.Admin.ViewModels
+namespace TienLuxury.Areas.Admin.ViewModels
 {
     public class InvoiceUpdateVIewModel
     {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MinhTienHairSalon.Areas.Admin.Controllers
+namespace TienLuxury.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class DeviceNotSupportedController : Controller

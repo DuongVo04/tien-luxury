@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace MinhTienHairSalon.Areas.Filter
+namespace TienLuxury.Areas.Filter
 {
     public class DesktopOnlyAttribute : ActionFilterAttribute
     {

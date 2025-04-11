@@ -2,7 +2,7 @@
 using MongoDB.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace MinhTienHairSalon.Models
+namespace TienLuxury.Models
 {
     [Collection("reservation")]
     public class Reservation

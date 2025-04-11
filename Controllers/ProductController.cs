@@ -1,13 +1,13 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
-using MinhTienHairSalon.Helpers;
-using MinhTienHairSalon.Models;
-using MinhTienHairSalon.Services;
-using MinhTienHairSalon.ViewModels;
+using TienLuxury.Helpers;
+using TienLuxury.Models;
+using TienLuxury.Services;
+using TienLuxury.ViewModels;
 using MongoDB.Bson;
 
-namespace MinhTienHairSalon.Controllers
+namespace TienLuxury.Controllers
 {
     public class ProductController(IProductService productService) : Controller
     {

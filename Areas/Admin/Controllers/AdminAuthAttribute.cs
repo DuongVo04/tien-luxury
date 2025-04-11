@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Authorization;
 
-namespace MinhTienHairSalon.Areas.Admin.Controllers
+namespace TienLuxury.Areas.Admin.Controllers
 {
     public class AdminAuthAttribute : ActionFilterAttribute
     {

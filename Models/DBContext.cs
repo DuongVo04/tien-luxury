@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace MinhTienHairSalon.Models
+namespace TienLuxury.Models
 {
     public class DBContext(DbContextOptions options) : DbContext(options)
     {

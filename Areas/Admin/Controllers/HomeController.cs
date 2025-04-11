@@ -1,12 +1,12 @@
 ﻿using MongoDB.Bson;
 using Microsoft.AspNetCore.Mvc;
-using MinhTienHairSalon.Areas.Admin.ViewModels;
-using MinhTienHairSalon.Areas.Admin.Services;
-using MinhTienHairSalon.Areas.Filter;
-using MinhTienHairSalon.Services;
+using TienLuxury.Areas.Admin.ViewModels;
+using TienLuxury.Areas.Admin.Services;
+using TienLuxury.Areas.Filter;
+using TienLuxury.Services;
 using System.Threading.Tasks;
 
-namespace MinhTienHairSalon.Areas.Admin.Controllers
+namespace TienLuxury.Areas.Admin.Controllers
 {
     [AdminAuth]
     [Area("Admin")]
