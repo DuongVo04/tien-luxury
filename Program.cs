@@ -36,19 +36,12 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 //Config database
 var mongoDBSettings = builder.Configuration.GetSection("MongoDBSettings").Get<MongoDBSettings>();
-var mongoPassword = Environment.GetEnvironmentVariable("MONGODB_PASSWORD") ?? "";
-var connectionString = mongoDBSettings?.AtlasURI?.Replace("<PASSWORD>", mongoPassword)
-    ?? throw new InvalidOperationException("MongoDBSettings or AtlasURI is not configured properly.");
+var connectionString = mongoDBSettings?.AtlasURI;
 builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("MongoDBSettings"));
 
 builder.Services.AddDbContext<DBContext>(options =>
     options.UseMongoDB(connectionString, mongoDBSettings.DatabaseName ?? "")
 );
-Console.WriteLine("MongoDB password: " + mongoPassword);
-if (string.IsNullOrEmpty(mongoPassword))
-{
-    throw new Exception("MONGODB_PASSWORD not found");
-}
 
 builder.Services.AddScoped<IAdminAccountService, AdminAccountService>();
 builder.Services.AddScoped<IServiceService, ServiceService>();
