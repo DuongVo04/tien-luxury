@@ -12,10 +12,11 @@
 
 [Features](#-key-features) • [Tech Stack](#-technologies-used) • [Installation](#-installation)
 
+TienLuxury is a web application built with ASP.NET Core, providing a management and business platform for TienLuxury store.
+
 </div>
 
 
-TienLuxury is a web application built with ASP.NET Core, providing a management and business platform for TienLuxury store.
 
 ## Key Features
 
@@ -95,3 +96,4 @@ dotnet run
 
 
 Copyright © 2025 TienLuxury. All rights reserved.
+
