@@ -1,4 +1,19 @@
+<div align="center">
+
 # TienLuxury
+
+### Comprehensive Hair Salon Management Solution
+
+[![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-9.0-purple.svg)](https://dotnet.microsoft.com/)
+[![C#](https://img.shields.io/badge/C%23-12.0-green.svg)](https://docs.microsoft.com/dotnet/csharp/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-7.0+-brightgreen.svg)](https://www.mongodb.com/)
+[![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS%2FBootstrap-orange.svg)](https://getbootstrap.com/)
+[![Architecture](https://img.shields.io/badge/Architecture-MVC-blue.svg)](https://docs.microsoft.com/aspnet/core/mvc/overview)
+
+[Features](#-key-features) • [Tech Stack](#-technologies-used) • [Installation](#-installation)
+
+</div>
+
 
 TienLuxury is a web application built with ASP.NET Core, providing a management and business platform for TienLuxury store.
 
@@ -77,5 +92,6 @@ dotnet run
 - ngDucTuan062004
 
 ## License
+
 
 Copyright © 2025 TienLuxury. All rights reserved.
